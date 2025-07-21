@@ -1,109 +1,69 @@
-<!DOCTYPE html>
-<html lang="en">
+<!-- services.html: Describes the services offered by Odiems Limited --><!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Discover our professional agricultural services including consultancy, poultry training, farm setup, and agribusiness support across Kenya.">
+  <meta name="description" content="Explore services by Odiems Limited including agricultural consultancy, farm setup, digital tools, and training.">
   <title>Our Services | Odiems Limited</title>
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f9fcff;
-      margin: 0;
-      padding: 0;
-      color: #333;
-    }
-    header, footer {
-      background: #004080;
-      color: white;
-      text-align: center;
-      padding: 20px 0;
-    }
-    nav a {
-      color: #fff;
-      margin: 0 15px;
-      text-decoration: none;
-    }
-    .container {
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 20px;
-      background: #fff;
-      border-radius: 8px;
-    }
-    h1, h2 {
-      color: #004080;
-    }
-    .service-list {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-      margin-top: 20px;
-    }
-    .service-card {
-      background: #f0f8ff;
-      padding: 20px;
-      border-radius: 10px;
-      border-left: 5px solid #007bff;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-      transition: transform 0.3s;
-    }
-    .service-card:hover {
-      transform: translateY(-4px);
-    }
-    footer p {
-      font-size: 0.9em;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
-    <h1>Odiems Limited</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="products.html">Products</a>
-      <a href="services.html">Services</a>
-      <a href="blog.html">Blog</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
-
-  <div class="container">
-    <h2>Our Services</h2>
-    <p>We go beyond supplying farm products. Odiems Limited is committed to empowering farmers, improving food security, and delivering agribusiness value. Below are our key service offerings:</p>
-
-    <div class="service-list">
-      <div class="service-card">
-        <h3>Agribusiness Consultancy</h3>
-        <p>Strategic advice for startups and existing farms. We help you plan, manage, and scale your agricultural venture profitably.</p>
-      </div>
-      <div class="service-card">
-        <h3>Farm Setup & Expansion</h3>
-        <p>From land assessment, crop selection, to poultry and bird structures — we guide you to set up modern and sustainable farms.</p>
-      </div>
-      <div class="service-card">
-        <h3>Poultry Training</h3>
-        <p>We offer hands-on training in rearing indigenous chickens, turkeys, guinea fowls, and geese. Learn from experts and boost your yield.</p>
-      </div>
-      <div class="service-card">
-        <h3>Input Sourcing Support</h3>
-        <p>We connect you to genuine suppliers of seeds, feeds, and veterinary inputs. Quality assured for better productivity.</p>
-      </div>
-      <div class="service-card">
-        <h3>Market Linkages</h3>
-        <p>Get access to buyers, processors, and export markets. We help farmers turn their harvest into income.</p>
-      </div>
-      <div class="service-card">
-        <h3>Agri-Finance Guidance</h3>
-        <p>Need funding? We guide you on how to access agri-loans, grants, and investment partnerships with our financial partners.</p>
-      </div>
+    <div class="navbar">
+      <a href="index.html" class="logo">Odiems Limited</a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html" class="active">Services</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>  <main class="container">
+    <h1>Our Services</h1>
+    <p>At Odiems Limited, we provide a comprehensive range of professional services tailored to meet the needs of farmers, agribusiness entrepreneurs, and agricultural enthusiasts both locally and globally.</p><section class="service-list">
+  <div class="service">
+    <h2>Farm Consultancy</h2>
+    <p>We offer personalized consultancy services to help you plan, manage, and optimize your farming projects. From land preparation to harvesting, our team walks with you every step.</p>
   </div>
 
-  <footer>
-    <p>&copy; 2025 Odiems Limited. All rights reserved.</p>
+  <div class="service">
+    <h2>Farm Setup & Management</h2>
+    <p>We help clients set up poultry farms, mixed farms, or specialized operations like ornamental bird keeping. We also provide ongoing farm management solutions for efficiency and productivity.</p>
+  </div>
+
+  <div class="service">
+    <h2>Digital Agriculture Tools</h2>
+    <p>Our digital tools support farmers with real-time weather updates, planting guides, pest detection, and AI-supported decisions for precision farming.</p>
+  </div>
+
+  <div class="service">
+    <h2>Agribusiness Training</h2>
+    <p>We run online and on-site training programs covering agripreneurship, financial literacy, marketing, and modern farming practices.</p>
+  </div>
+
+  <div class="service">
+    <h2>Investor Partnership</h2>
+    <p>We welcome local and international investors to collaborate in agricultural projects. Our model ensures transparency, sustainability, and shared growth.</p>
+  </div>
+
+  <div class="service">
+    <h2>Information & Resources Hub</h2>
+    <p>Through our blog and resource portal, we provide in-depth articles, farming tips, policy analysis, and the latest agri-tech trends to keep you informed and empowered.</p>
+  </div>
+</section>
+
+<div class="cta">
+  <p>Want to learn more or get started? <a href="contact.html">Contact us</a> today for a custom consultation.</p>
+</div>
+
+  </main>  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Odiems Limited. All rights reserved.</p>
+      <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+    </div>
   </footer>
 </body>
 </html>
