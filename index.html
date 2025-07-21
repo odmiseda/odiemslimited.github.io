@@ -1,101 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Odiems Limited is a leading agricultural and tech firm offering quality products, information, and services." />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Odiems Limited - Agriculture & IT Solutions for a better future in Kenya and beyond">
   <title>Odiems Limited | Home</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="/favicon.png">
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Roboto', sans-serif; line-height: 1.6; background: #f4f4f4; color: #333; }
-    header, footer { background: #006400; color: #fff; padding: 1em 2em; text-align: center; }
-    nav { display: flex; justify-content: center; background: #004d00; }
-    nav a { color: #fff; padding: 1em; text-decoration: none; display: inline-block; }
-    nav a:hover { background: #003300; }
-    .container { padding: 2em; }
-    .hero { background: url('https://via.placeholder.com/1200x400?text=Odiems+Limited+Farming') no-repeat center center/cover; height: 300px; display: flex; align-items: center; justify-content: center; color: white; font-size: 2em; font-weight: bold; }
-    .features { display: flex; flex-wrap: wrap; gap: 1em; justify-content: center; margin-top: 2em; }
-    .feature-box { background: #fff; padding: 1em; border-radius: 8px; width: 300px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-    .adsense-placeholder, .mailchimp-placeholder { background: #ddd; padding: 1em; margin: 2em 0; text-align: center; border: 2px dashed #aaa; }
-    footer p { margin: 0.5em 0; }
-    @media(max-width: 768px) {
-      nav { flex-direction: column; }
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header, nav, footer { background-color: #004225; color: white; text-align: center; padding: 15px 0; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    .hero { background: url('hero.jpg') no-repeat center center/cover; padding: 100px 20px; color: white; text-align: center; }
+    .hero h1 { font-size: 3em; margin: 0; }
+    .content { padding: 40px 20px; max-width: 1000px; margin: auto; text-align: center; }
+    .features { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+    .feature { background: #f4f4f4; border-radius: 8px; padding: 20px; width: 300px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    footer p { margin: 5px 0; font-size: 0.9em; }
+    @media (max-width: 768px) {
       .features { flex-direction: column; align-items: center; }
     }
   </style>
 </head>
 <body>
+  <!-- News Ticker -->
+  <div style="background: #ffcc00; color: #000; padding: 10px; text-align: center; font-weight: bold;">
+    📢 New product launch this August – Stay tuned for updates!
+  </div>
 
+  <!-- Navigation Bar -->
   <header>
     <h1>Odiems Limited</h1>
-    <p>Innovation in Agriculture & Technology</p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="products.html">Products</a>
+      <a href="services.html">Services</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </header>
-
-  <!-- Navigation -->
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="products.html">Products</a>
-    <a href="services.html">Services</a>
-    <a href="blog.html">Blog</a>
-    <a href="contact.html">Contact</a>
-  </nav>
 
   <!-- Hero Section -->
   <div class="hero">
-    Empowering Farmers with Innovation
+    <h1>Empowering Agriculture & Technology</h1>
+    <p>Innovative solutions for farmers, tech lovers, and businesses.</p>
   </div>
 
-  <div class="container">
-
-    <!-- News Ticker -->
-    <div style="background: #ffcc00; color: #000; padding: 10px; text-align: center; font-weight: bold;">
-      📢 New product launch this August – Stay tuned for updates!
-    </div>
-
-    <!-- Features -->
+  <!-- Main Content -->
+  <div class="content">
+    <h2>What We Do</h2>
     <div class="features">
-      <div class="feature-box">
-        <h3>Smart Farming</h3>
-        <p>We provide modern solutions to boost your farm's productivity.</p>
+      <div class="feature">
+        <h3>Farming Solutions</h3>
+        <p>From seed to harvest, we help farmers succeed with innovative techniques and reliable products.</p>
       </div>
-      <div class="feature-box">
-        <h3>Quality Products</h3>
-        <p>Access our wide range of certified agricultural products.</p>
+      <div class="feature">
+        <h3>IT & Digital Tools</h3>
+        <p>Boost your agribusiness with modern tech – from websites to mobile tools and data systems.</p>
       </div>
-      <div class="feature-box">
-        <h3>Tech Insights</h3>
-        <p>Follow our blog to learn how technology is changing farming.</p>
+      <div class="feature">
+        <h3>Training & Support</h3>
+        <p>Capacity building, workshops, and hands-on support to empower rural communities and tech adoption.</p>
       </div>
     </div>
-
-    <!-- AdSense Placeholder -->
-    <div class="adsense-placeholder">
-      [ Google AdSense Placeholder ]
-    </div>
-
-    <!-- Mailchimp Form -->
-    <div class="mailchimp-placeholder">
-      <form action="https://YOUR_MAILCHIMP_URL" method="POST" target="_blank">
-        <label for="email">Subscribe to Our Newsletter:</label><br><br>
-        <input type="email" name="EMAIL" placeholder="Enter your email" required style="padding: 0.5em; width: 60%;">
-        <br><br>
-        <button type="submit" style="padding: 0.5em 1em; background: #006400; color: white; border: none;">Subscribe</button>
-      </form>
-    </div>
-
   </div>
 
-  <footer>
-    <p>&copy; 2025 Odiems Limited. All rights reserved.</p>
-    <p><a href="privacy.html" style="color:#fff;">Privacy Policy</a> | <a href="terms.html" style="color:#fff;">Terms</a></p>
-  </footer>
+  <!-- Email Subscription Form -->
+  <div style="max-width: 400px; margin: auto; padding: 20px; border: 2px solid #004225; border-radius: 10px; background: #f9f9f9;">
+    <h2 style="color:#004225; text-align:center;">Subscribe to Our Newsletter</h2>
+    <form action="https://YOUR_MAILCHIMP_URL" method="post" target="_blank" novalidate>
+      <label for="email">Email Address:</label><br>
+      <input type="email" name="EMAIL" id="email" required style="width: 100%; padding: 10px; margin-top: 10px;">
+      <br><br>
+      <button type="submit" style="width: 100%; padding: 10px; background: #004225; color: #fff; border: none; cursor: pointer;">Subscribe</button>
+    </form>
+  </div>
 
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Odiems Limited. All Rights Reserved.</p>
+    <p><a href="privacy.html" style="color:white;">Privacy Policy</a> | <a href="terms.html" style="color:white;">Terms of Service</a></p>
+  </footer>
 </body>
 </html>
