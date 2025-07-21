@@ -1,30 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Contact Odiems Limited - Reach out for farming, technology or business inquiries in Kenya."/>
-  <meta name="keywords" content="Contact Odiems, Agriculture, Farming Kenya, IT services"/>
-  <meta name="author" content="Odiems Limited"/>
-  <title>Contact | Odiems Limited</title>
-  <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Odiems Limited - Reach out for support, services, or business inquiries." />
+  <meta name="author" content="Odiems Limited" />
+  <title>Contact Us | Odiems Limited</title>
+  <link rel="stylesheet" href="styles.css" />
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; background: #f4f4f4; color: #333; }
-    header, footer { background-color: #2e7d32; color: white; padding: 15px 20px; }
-    nav a { color: white; margin: 0 10px; text-decoration: none; font-weight: bold; }
-    .hero { background: url('https://via.placeholder.com/1200x250?text=Contact+Odiems+Limited') no-repeat center; background-size: cover; padding: 60px 20px; text-align: center; color: white; }
-    .container { max-width: 900px; margin: auto; padding: 40px 20px; background: white; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-    .contact-form label { display: block; margin-top: 15px; font-weight: bold; }
-    .contact-form input, .contact-form textarea { width: 100%; padding: 10px; margin-top: 5px; border-radius: 5px; border: 1px solid #ccc; }
-    .contact-form button { margin-top: 20px; padding: 12px 25px; background: #2e7d32; color: white; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; }
-    .contact-form button:hover { background: #256428; }
-    .contact-info { margin-top: 30px; }
-    footer { text-align: center; font-size: 14px; }
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header, footer { background: #1e3a8a; color: white; padding: 1rem; text-align: center; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; }
+    nav a:hover { text-decoration: underline; }
+    .container { padding: 2rem; max-width: 1000px; margin: auto; }
+    form { display: flex; flex-direction: column; gap: 1rem; margin-top: 1rem; }
+    input, textarea { padding: 10px; border: 1px solid #ccc; border-radius: 5px; }
+    input[type="submit"] { background: #1e3a8a; color: white; cursor: pointer; border: none; }
+    input[type="submit"]:hover { background: #0f2565; }
+    .map { margin-top: 2rem; }
+    .ads, .newsletter { margin-top: 2rem; padding: 1rem; background: #f1f1f1; border-radius: 5px; }
   </style>
 </head>
 <body>
 
-  <!-- Header -->
   <header>
     <h1>Odiems Limited</h1>
     <nav>
@@ -37,40 +35,61 @@
     </nav>
   </header>
 
-  <!-- Hero -->
-  <div class="hero">
-    <h2>Contact Us</h2>
-    <p>We’re here to help – Get in touch!</p>
+  <!-- News Ticker -->
+  <div style="background: #ffcc00; color: #000; padding: 10px; text-align: center; font-weight: bold;">
+    📢 New: Visit our product page for August discounts!
   </div>
 
-  <!-- Main Content -->
   <div class="container">
-    <h3>Send Us a Message</h3>
-    <form class="contact-form" action="mailto:info@odiemslimited.com" method="POST" enctype="text/plain">
-      <label for="name">Your Name</label>
-      <input type="text" id="name" name="name" required>
+    <h2>Contact Us</h2>
+    <p>We're here to help! Reach out via the form below or contact us through any of the provided details.</p>
 
-      <label for="email">Your Email</label>
-      <input type="email" id="email" name="email" required>
+    <form action="#" method="POST">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Your name" required />
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required />
 
       <label for="message">Your Message</label>
-      <textarea id="message" name="message" rows="6" required></textarea>
+      <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
 
-      <button type="submit">Send Message</button>
+      <input type="submit" value="Send Message" />
     </form>
 
-    <div class="contact-info">
-      <h3>Company Info</h3>
-      <p><strong>Odiems Limited</strong></p>
-      <p>Email: info@odiemslimited.com</p>
-      <p>Phone: +254 712 345 678</p>
-      <p>Location: Kisumu, Kenya</p>
+    <div class="map">
+      <h3>Our Location</h3>
+      <iframe src="https://maps.google.com/maps?q=Nairobi&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <div class="ads">
+      <!-- Google AdSense Placeholder -->
+      <p><strong>Ad space:</strong> Your Google AdSense ad will appear here.</p>
+      <!-- Example placeholder -->
+      <div style="background:#e2e8f0; padding:20px; text-align:center;">[AdSense Placeholder]</div>
+    </div>
+
+    <div class="newsletter">
+      <h3>Subscribe to Our Newsletter</h3>
+      <form action="https://YOUR-MAILCHIMP-FORM-URL" method="post" target="_blank">
+        <input type="email" name="EMAIL" placeholder="Your email address" required />
+        <input type="submit" value="Subscribe" />
+      </form>
+    </div>
+
+    <div class="contact-info" style="margin-top:2rem;">
+      <h3>Contact Details</h3>
+      <p><strong>Email:</strong> info@odiemslimited.com</p>
+      <p><strong>Phone:</strong> +254 712 345678</p>
+      <p><strong>Office:</strong> Nairobi, Kenya</p>
     </div>
   </div>
 
-  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Odiems Limited | <a href="privacy.html" style="color:#fff;">Privacy Policy</a> | <a href="terms.html" style="color:#fff;">Terms</a></p>
+    <p>&copy; 2025 Odiems Limited. All rights reserved.</p>
+    <a href="privacy.html" style="color:white;">Privacy Policy</a> | 
+    <a href="terms.html" style="color:white;">Terms of Service</a>
   </footer>
 
 </body>
