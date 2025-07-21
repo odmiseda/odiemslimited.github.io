@@ -1,90 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
+<!-- blog.html: Blogger-integrated blog page with Mailchimp form and SEO features --><!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Read the latest agribusiness insights, farm tips, and market news from Odiems Limited's official blog.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Odiems Limited Blog - Agricultural Insights, Technology Updates & Tips" />
+  <meta name="keywords" content="Odiems, Agriculture, Tech, Farming in Kenya, Innovation, Sustainable Farming, Blog" />
+  <meta name="author" content="Odiems Limited" />
   <title>Blog | Odiems Limited</title>
   <link rel="stylesheet" href="style.css" />
   <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f9fcff;
-      margin: 0;
-      padding: 0;
-      color: #333;
-    }
-    header, footer {
-      background-color: #004080;
-      color: white;
-      text-align: center;
-      padding: 20px 0;
-    }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-    }
-    .container {
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 20px;
-      background-color: white;
-      border-radius: 8px;
-    }
-    h1, h2 {
-      color: #004080;
-    }
-    iframe {
-      width: 100%;
-      height: 600px;
-      border: none;
-      margin-top: 20px;
-      border-radius: 8px;
-    }
-    .blog-cta {
-      text-align: center;
-      margin: 30px 0;
-    }
-    .blog-cta a {
-      background-color: #007bff;
-      color: white;
-      padding: 12px 25px;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .blog-cta a:hover {
-      background-color: #0056b3;
-    }
+    body { font-family: Arial, sans-serif; background: #f4f4f4; color: #333; }
+    .container { max-width: 900px; margin: 40px auto; padding: 20px; background: #fff; border-radius: 8px; }
+    .post { border-bottom: 1px solid #ccc; padding-bottom: 20px; margin-bottom: 20px; }
+    .post h2 { color: #004080; margin-bottom: 10px; }
+    .post p.meta { font-size: 0.9em; color: #666; margin-bottom: 15px; }
+    .post a { color: #007bff; text-decoration: none; }
+    .post a:hover { text-decoration: underline; }
+    .mailchimp-form { margin-top: 40px; padding: 20px; background: #eef5f9; border-radius: 8px; }
+    .mailchimp-form input[type=email] { padding: 10px; width: 70%; border: 1px solid #ccc; border-radius: 4px; }
+    .mailchimp-form input[type=submit] { padding: 10px 20px; background: #004080; color: #fff; border: none; border-radius: 4px; cursor: pointer; }
+    .mailchimp-form input[type=submit]:hover { background: #0066cc; }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Odiems Limited</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="products.html">Products</a>
-      <a href="services.html">Services</a>
-      <a href="blog.html">Blog</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
-
   <div class="container">
-    <h2>Latest News & Insights</h2>
-    <p>Explore the latest updates, business insights, and farming tips from our official blog. Stay informed, inspired, and ahead in agribusiness.</p>
+    <h1>Latest Blog Posts</h1>
+    <p>Our latest posts are published via our Blogger feed. Click below to explore:</p>
+    <ul>
+      <li><a href="https://odiemslimited.blogspot.com" target="_blank">Visit Our Official Blog</a></li>
+    </ul><!-- Mailchimp Signup Form -->
+<div class="mailchimp-form">
+  <h2>Subscribe for Updates</h2>
+  <form action="https://YOURUSERNAME.usX.list-manage.com/subscribe/post?u=XXXXXXXXX&amp;id=YYYYYYYYY" method="post" target="_blank" novalidate>
+    <input type="email" name="EMAIL" placeholder="Enter your email" required>
+    <input type="submit" value="Subscribe">
+  </form>
+</div>
 
-    <div class="blog-cta">
-      <a href="https://odiemslimited.blogspot.com/" target="_blank">Visit Full Blog</a>
-    </div>
-
-    <iframe src="https://odiemslimited.blogspot.com/" title="Odiems Limited Blog"></iframe>
   </div>
-
-  <footer>
-    <p>&copy; 2025 Odiems Limited. All rights reserved.</p>
-  </footer>
 </body>
 </html>
