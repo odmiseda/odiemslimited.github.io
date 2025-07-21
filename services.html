@@ -1,74 +1,80 @@
+<!-- services.html -->
 <!DOCTYPE html>
 <html lang="en">
-<head <link rel="stylesheet" href="styles.css" />
->
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y1CFKRGQXV"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-Y1CFKRGQXV');
-</script>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Our Services - Odiems Limited</title>
-  <link rel="stylesheet" href="styles.css" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services | Odiems Limited</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    .hero { background: url('https://via.placeholder.com/1200x300') center/cover; color: white; padding: 60px 20px; text-align: center; }
+    .services-container { display: flex; flex-wrap: wrap; justify-content: center; padding: 40px 20px; gap: 30px; }
+    .service { flex: 0 0 300px; border: 1px solid #ddd; padding: 20px; border-radius: 10px; text-align: center; background: #f9f9f9; }
+    .service img { max-width: 100px; }
+  </style>
 </head>
 <body>
-  <header>
-    <div><strong>Odiems Limited</strong></div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="blog.html">Blog</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+  <!-- Navigation -->
+  <nav style="background: #004225; padding: 10px 0; text-align: center;">
+    <a href="index.html" style="color: white; margin: 0 15px; text-decoration: none;">Home</a>
+    <a href="about.html" style="color: white; margin: 0 15px; text-decoration: none;">About Us</a>
+    <a href="products.html" style="color: white; margin: 0 15px; text-decoration: none;">Products</a>
+    <a href="services.html" style="color: white; margin: 0 15px; text-decoration: none;">Services</a>
+    <a href="blog.html" style="color: white; margin: 0 15px; text-decoration: none;">Blog</a>
+    <a href="contact.html" style="color: white; margin: 0 15px; text-decoration: none;">Contact</a>
+  </nav>
 
-  <section class="section">
+  <!-- Hero -->
+  <div class="hero">
     <h1>Our Services</h1>
-    <ul>
-      <li><strong>Mixed Farming:</strong> Crops, poultry, and livestock management</li>
-      <li><strong>Agri-Tech:</strong> ICT tools for farmers and agribusinesses</li>
-      <li><strong>Training:</strong> On-site and digital farming & IT training</li>
-      <li><strong>Website & App Development:</strong> Tailored software for clients</li>
-    </ul>
-  </section>
+    <p>Delivering value in agriculture, finance, and community empowerment</p>
+  </div>
 
-  <footer>
-    <p>&copy; 2025 Odiems Limited</p>
+  <!-- Services -->
+  <div class="services-container">
+    <div class="service">
+      <img src="https://via.placeholder.com/100" alt="Shylock Services">
+      <h3>Shylock Loans</h3>
+      <p>Short-term loans at competitive rates with flexible terms. Trusted by over 15 steady clients.</p>
+    </div>
+    <div class="service">
+      <img src="https://via.placeholder.com/100" alt="Poultry Services">
+      <h3>Poultry Advisory</h3>
+      <p>Expert support in raising ornamental birds including turkeys, guinea fowl, and geese.</p>
+    </div>
+    <div class="service">
+      <img src="https://via.placeholder.com/100" alt="Farm Supplies">
+      <h3>Agro Supplies</h3>
+      <p>Access high-quality feed, equipment, and supplements through our verified partner network.</p>
+    </div>
+    <div class="service">
+      <img src="https://via.placeholder.com/100" alt="Training">
+      <h3>Farm Training</h3>
+      <p>Attend seasonal trainings and online sessions for modern farming skills and digital tools.</p>
+    </div>
+  </div>
+
+  <!-- AdSense Placeholder -->
+  <div style="margin: 30px auto; max-width: 728px; text-align: center; border: 1px dashed #ccc; padding: 20px;">
+    <strong>AdSense Ad Slot</strong><br>
+    <em>This is where your ad will appear once AdSense is approved.</em>
+  </div>
+
+  <!-- Footer -->
+  <footer style="background: #222; color: white; text-align: center; padding: 20px 10px;">
+    <p>&copy; 2025 Odiems Limited. All rights reserved.</p>
+    <p><a href="privacy.html" style="color: #ddd; text-decoration: underline;">Privacy Policy</a> | <a href="contact.html" style="color: #ddd; text-decoration: underline;">Contact Us</a></p>
+    <div style="margin-top: 10px;">
+      <a href="#" style="color: #ddd; margin: 0 10px;">Facebook</a>
+      <a href="#" style="color: #ddd; margin: 0 10px;">Instagram</a>
+      <a href="#" style="color: #ddd; margin: 0 10px;">WhatsApp</a>
+    </div>
   </footer>
-  <!-- Floating WhatsApp Button -->
-<a href="https://wa.me/254795179287" 
-   class="whatsapp-float" 
-   target="_blank" 
-   title="Chat with us on WhatsApp">
-  💬
-</a>
 
-<style>
-  .whatsapp-float {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #25D366;
-    color: white;
-    font-size: 2rem;
-    padding: 0.5rem 1rem;
-    border-radius: 50%;
-    text-decoration: none;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-    z-index: 999;
-    transition: background 0.3s;
-  }
-
-  .whatsapp-float:hover {
-    background: #128C7E;
-  }
-</style>
-
+  <!-- WhatsApp Chat Button -->
+  <a href="https://wa.me/254700000000" target="_blank" style="position: fixed; bottom: 20px; right: 20px; background: #25D366; color: white; padding: 10px 15px; border-radius: 50px; text-decoration: none; box-shadow: 0 2px 5px rgba(0,0,0,0.3); font-weight: bold;">
+    Chat with us
+  </a>
 </body>
 </html>
