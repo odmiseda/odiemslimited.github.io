@@ -1,86 +1,77 @@
-<!-- contact.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact Us | Odiems Limited</title>
-  <link rel="icon" href="/favicon.ico" />
+  <meta name="description" content="Contact Odiems Limited - Reach out for farming, technology or business inquiries in Kenya."/>
+  <meta name="keywords" content="Contact Odiems, Agriculture, Farming Kenya, IT services"/>
+  <meta name="author" content="Odiems Limited"/>
+  <title>Contact | Odiems Limited</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon"/>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-    .hero { background: #004225; color: white; padding: 40px 20px; text-align: center; }
-    .container { max-width: 1200px; margin: auto; padding: 30px 20px; display: flex; flex-wrap: wrap; gap: 40px; }
-    .contact-form, .contact-info { flex: 1 1 400px; }
-    input, textarea { width: 100%; padding: 10px; margin-top: 10px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 5px; }
-    button { background: #004225; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; }
-    iframe { width: 100%; border: 0; border-radius: 10px; height: 300px; }
+    body { font-family: Arial, sans-serif; margin: 0; background: #f4f4f4; color: #333; }
+    header, footer { background-color: #2e7d32; color: white; padding: 15px 20px; }
+    nav a { color: white; margin: 0 10px; text-decoration: none; font-weight: bold; }
+    .hero { background: url('https://via.placeholder.com/1200x250?text=Contact+Odiems+Limited') no-repeat center; background-size: cover; padding: 60px 20px; text-align: center; color: white; }
+    .container { max-width: 900px; margin: auto; padding: 40px 20px; background: white; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+    .contact-form label { display: block; margin-top: 15px; font-weight: bold; }
+    .contact-form input, .contact-form textarea { width: 100%; padding: 10px; margin-top: 5px; border-radius: 5px; border: 1px solid #ccc; }
+    .contact-form button { margin-top: 20px; padding: 12px 25px; background: #2e7d32; color: white; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; }
+    .contact-form button:hover { background: #256428; }
+    .contact-info { margin-top: 30px; }
+    footer { text-align: center; font-size: 14px; }
   </style>
 </head>
 <body>
-  <!-- Navigation Bar -->
-  <nav style="background: #004225; padding: 10px 0; text-align: center;">
-    <a href="index.html" style="color: white; margin: 0 15px; text-decoration: none;">Home</a>
-    <a href="about.html" style="color: white; margin: 0 15px; text-decoration: none;">About Us</a>
-    <a href="products.html" style="color: white; margin: 0 15px; text-decoration: none;">Products</a>
-    <a href="services.html" style="color: white; margin: 0 15px; text-decoration: none;">Services</a>
-    <a href="blog.html" style="color: white; margin: 0 15px; text-decoration: none;">Blog</a>
-    <a href="contact.html" style="color: white; margin: 0 15px; text-decoration: underline;">Contact</a>
-  </nav>
 
-  <!-- Hero Section -->
+  <!-- Header -->
+  <header>
+    <h1>Odiems Limited</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="products.html">Products</a>
+      <a href="services.html">Services</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
   <div class="hero">
-    <h1>Contact Us</h1>
-    <p>Reach out for inquiries, partnerships, and support</p>
+    <h2>Contact Us</h2>
+    <p>We’re here to help – Get in touch!</p>
   </div>
 
-  <!-- Main Contact Content -->
+  <!-- Main Content -->
   <div class="container">
-    <!-- Contact Form -->
-    <div class="contact-form">
-      <h2>Send Us a Message</h2>
-      <form action="mailto:info@odiemslimited.com" method="POST" enctype="text/plain">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
+    <h3>Send Us a Message</h3>
+    <form class="contact-form" action="mailto:info@odiemslimited.com" method="POST" enctype="text/plain">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required>
 
-    <!-- Contact Info -->
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" rows="6" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+
     <div class="contact-info">
-      <h2>Our Address</h2>
-      <p><strong>Odiems Limited</strong><br/>
-      P.O. Box 12345 - 40100<br/>
-      Kisumu, Kenya</p>
-
-      <p><strong>Email:</strong> info@odiemslimited.com</p>
-      <p><strong>Phone:</strong> +254 700 000000</p>
-
-      <h3>Visit Us</h3>
-      <iframe src="https://maps.google.com/maps?q=Kisumu,Kenya&t=&z=13&ie=UTF8&iwloc=&output=embed" allowfullscreen></iframe>
+      <h3>Company Info</h3>
+      <p><strong>Odiems Limited</strong></p>
+      <p>Email: info@odiemslimited.com</p>
+      <p>Phone: +254 712 345 678</p>
+      <p>Location: Kisumu, Kenya</p>
     </div>
-  </div>
-
-  <!-- AdSense Placeholder -->
-  <div style="margin: 30px auto; max-width: 728px; text-align: center; border: 1px dashed #ccc; padding: 20px;">
-    <strong>AdSense Ad Slot</strong><br/>
-    <em>Your ad will appear here once approved by Google AdSense</em>
   </div>
 
   <!-- Footer -->
-  <footer style="background: #222; color: white; text-align: center; padding: 20px 10px;">
-    <p>&copy; 2025 Odiems Limited. All rights reserved.</p>
-    <p><a href="privacy.html" style="color: #ddd; text-decoration: underline;">Privacy Policy</a> | <a href="contact.html" style="color: #ddd; text-decoration: underline;">Contact Us</a></p>
-    <div style="margin-top: 10px;">
-      <a href="#" style="color: #ddd; margin: 0 10px;">Facebook</a>
-      <a href="#" style="color: #ddd; margin: 0 10px;">Instagram</a>
-      <a href="#" style="color: #ddd; margin: 0 10px;">WhatsApp</a>
-    </div>
+  <footer>
+    <p>&copy; 2025 Odiems Limited | <a href="privacy.html" style="color:#fff;">Privacy Policy</a> | <a href="terms.html" style="color:#fff;">Terms</a></p>
   </footer>
 
-  <!-- WhatsApp Chat Button -->
-  <a href="https://wa.me/254700000000" target="_blank" style="position: fixed; bottom: 20px; right: 20px; background: #25D366; color: white; padding: 10px 15px; border-radius: 50px; text-decoration: none; box-shadow: 0 2px 5px rgba(0,0,0,0.3); font-weight: bold;">
-    Chat with us
-  </a>
 </body>
 </html>
