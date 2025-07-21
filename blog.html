@@ -1,101 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y1CFKRGQXV"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-Y1CFKRGQXV');
-</script>
-  <meta charset="UTF-8">
-  <title>Blog - Odiems Limited</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog | Odiems Limited</title>
+  <link rel="icon" href="/favicon.ico" />
   <style>
-    .blog-posts {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1.5rem;
-    }
-
-    .post-card {
-      background: #fff;
-      padding: 1rem;
-      border-radius: 5px;
-      flex: 1 1 300px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-
-    .post-card h3 {
-      margin-bottom: 0.5rem;
-    }
-
-    .post-card p {
-      color: #555;
-    }
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    .hero { background: url('https://via.placeholder.com/1200x300') center/cover; color: white; padding: 60px 20px; text-align: center; }
+    .container { padding: 40px 20px; max-width: 1200px; margin: auto; }
+    .blog-post { border-bottom: 1px solid #ccc; margin-bottom: 30px; padding-bottom: 20px; }
+    .blog-post h2 { margin-bottom: 10px; }
+    .blog-post img { max-width: 100%; height: auto; margin-bottom: 10px; border-radius: 8px; }
+    .blog-post p { line-height: 1.6; }
+    .read-more { color: #004225; text-decoration: underline; }
   </style>
 </head>
 <body>
-  <header>
-    <div><strong>Odiems Limited</strong></div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="blog.html">Blog</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
 
-  <section class="section">
-    <h1>Our Blog</h1>
-    <div class="blog-posts">
-      <div class="post-card">
-        <h3>How ICT is Changing Farming</h3>
-        <p>Discover how mobile apps, sensors, and drones are transforming African agriculture.</p>
-        <a href="#">Read More</a>
-      </div>
-      <div class="post-card">
-        <h3>Best Crops for Kisumu Region</h3>
-        <p>Top crops that thrive in Kisumu's climate for both local and export markets.</p>
-        <a href="#">Read More</a>
-      </div>
-    </div>
-  </section>
+<!-- Navigation Bar -->
+<nav style="background: #004225; padding: 10px 0; text-align: center;">
+  <a href="index.html" style="color: white; margin: 0 15px; text-decoration: none;">Home</a>
+  <a href="about.html" style="color: white; margin: 0 15px; text-decoration: none;">About Us</a>
+  <a href="products.html" style="color: white; margin: 0 15px; text-decoration: none;">Products</a>
+  <a href="services.html" style="color: white; margin: 0 15px; text-decoration: none;">Services</a>
+  <a href="blog.html" style="color: white; margin: 0 15px; text-decoration: none;">Blog</a>
+  <a href="contact.html" style="color: white; margin: 0 15px; text-decoration: none;">Contact</a>
+</nav>
 
-  <footer>
-    <p>&copy; 2025 Odiems Limited</p>
-  </footer>
-  <!-- Floating WhatsApp Button -->
-<a href="https://wa.me/254795179287" 
-   class="whatsapp-float" 
-   target="_blank" 
-   title="Chat with us on WhatsApp">
-  💬
+<!-- Hero Section -->
+<div class="hero">
+  <h1>Odiems Blog</h1>
+  <p>Latest updates, farming tips, financial advice & more</p>
+</div>
+
+<!-- Blog Posts -->
+<div class="container">
+
+  <div class="blog-post">
+    <h2>Boosting Poultry Production in Kenya</h2>
+    <img src="https://via.placeholder.com/800x400" alt="Poultry Farming">
+    <p>Poultry farming in Kenya has evolved rapidly. Here are modern tips for maximizing yields and reducing mortality rates in birds like geese, guinea fowl, and turkeys.</p>
+    <a href="#" class="read-more">Read more →</a>
+  </div>
+
+  <div class="blog-post">
+    <h2>How to Run a Profitable Shylock Business</h2>
+    <img src="https://via.placeholder.com/800x400" alt="Finance & Loans">
+    <p>Get insights into starting and managing a money lending business ethically, with smart risk control and high returns based on client reliability.</p>
+    <a href="#" class="read-more">Read more →</a>
+  </div>
+
+  <div class="blog-post">
+    <h2>Choosing the Right Agro Inputs</h2>
+    <img src="https://via.placeholder.com/800x400" alt="Agro Inputs">
+    <p>Learn how to choose quality feed, supplements, and farm tools from verified suppliers — avoid counterfeits and improve your crop/livestock yields.</p>
+    <a href="#" class="read-more">Read more →</a>
+  </div>
+
+  <!-- AdSense Slot -->
+  <div style="margin: 40px 0; text-align: center; border: 1px dashed #ccc; padding: 20px;">
+    <strong>AdSense Slot</strong><br>
+    <em>Your ad will appear here once approved.</em>
+  </div>
+
+</div>
+
+<!-- Footer -->
+<footer style="background: #222; color: white; text-align: center; padding: 20px 10px;">
+  <p>&copy; 2025 Odiems Limited. All rights reserved.</p>
+  <p><a href="privacy.html" style="color: #ddd; text-decoration: underline;">Privacy Policy</a> | 
+     <a href="contact.html" style="color: #ddd; text-decoration: underline;">Contact Us</a></p>
+  <div style="margin-top: 10px;">
+    <a href="#" style="color: #ddd; margin: 0 10px;">Facebook</a>
+    <a href="#" style="color: #ddd; margin: 0 10px;">Instagram</a>
+    <a href="#" style="color: #ddd; margin: 0 10px;">WhatsApp</a>
+  </div>
+</footer>
+
+<!-- WhatsApp Chat Button -->
+<a href="https://wa.me/254700000000" target="_blank" style="position: fixed; bottom: 20px; right: 20px; background: #25D366; color: white; padding: 10px 15px; border-radius: 50px; text-decoration: none; box-shadow: 0 2px 5px rgba(0,0,0,0.3); font-weight: bold;">
+  Chat with us
 </a>
-
-<style>
-  .whatsapp-float {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #25D366;
-    color: white;
-    font-size: 2rem;
-    padding: 0.5rem 1rem;
-    border-radius: 50%;
-    text-decoration: none;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-    z-index: 999;
-    transition: background 0.3s;
-  }
-
-  .whatsapp-float:hover {
-    background: #128C7E;
-  }
-</style>
 
 </body>
 </html>
