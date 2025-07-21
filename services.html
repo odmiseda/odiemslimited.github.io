@@ -1,92 +1,109 @@
-<!-- services.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Services | Odiems Limited</title>
-  <link rel="icon" href="/favicon.ico">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Odiems Limited - Agricultural, Tech and Financial Services in Kenya">
+  <meta name="keywords" content="Agricultural Services, Tech Solutions, Shylock Loans, Kenya, Farming">
+  <meta name="author" content="Odiems Limited">
+  <title>Services | Odiems Limited</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-    .hero { background: url('https://via.placeholder.com/1200x300') center/cover; color: white; padding: 60px 20px; text-align: center; }
-    .services-container { display: flex; flex-wrap: wrap; justify-content: center; padding: 40px 20px; gap: 30px; }
-    .service { flex: 0 0 300px; border: 1px solid #ddd; padding: 20px; border-radius: 10px; text-align: center; background: #f9f9f9; }
-    .service img { max-width: 100px; }
+    body { margin: 0; font-family: Arial, sans-serif; background: #f8f9fa; color: #333; }
+    header, footer { background: #2e7d32; color: #fff; padding: 15px 20px; }
+    nav a { color: #fff; margin: 0 10px; text-decoration: none; font-weight: bold; }
+    .hero { background: url('https://via.placeholder.com/1200x300?text=Our+Services') no-repeat center center; background-size: cover; padding: 80px 20px; color: white; text-align: center; text-shadow: 2px 2px 5px #000; }
+    .section { padding: 40px 20px; max-width: 1000px; margin: auto; }
+    .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+    .card {
+      background: white; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 20px; text-align: center;
+    }
+    .card img { max-width: 100px; height: 100px; margin-bottom: 15px; }
+    h2 { color: #2e7d32; }
+    .card h3 { margin: 10px 0 5px; color: #444; }
+    .card p { font-size: 14px; color: #555; }
+    footer { text-align: center; font-size: 14px; }
+    @media (max-width: 600px) {
+      .hero { padding: 60px 20px; font-size: 90%; }
+    }
   </style>
 </head>
 <body>
-  <!-- Navigation -->
-  <nav style="background: #004225; padding: 10px 0; text-align: center;">
-    <a href="index.html" style="color: white; margin: 0 15px; text-decoration: none;">Home</a>
-    <a href="about.html" style="color: white; margin: 0 15px; text-decoration: none;">About Us</a>
-    <a href="products.html" style="color: white; margin: 0 15px; text-decoration: none;">Products</a>
-    <a href="services.html" style="color: white; margin: 0 15px; text-decoration: none;">Services</a>
-    <a href="blog.html" style="color: white; margin: 0 15px; text-decoration: none;">Blog</a>
-    <a href="contact.html" style="color: white; margin: 0 15px; text-decoration: none;">Contact</a>
-  </nav>
+
+  <!-- Header -->
+  <header>
+    <h1>Odiems Limited</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="products.html">Products</a>
+      <a href="services.html">Services</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
   <!-- Hero -->
   <div class="hero">
-    <h1>Our Services</h1>
-    <p>Delivering value in agriculture, finance, and community empowerment</p>
+    <h2>Our Services</h2>
+    <p>Empowering farmers and tech-savvy entrepreneurs across Kenya</p>
   </div>
 
-  <!-- Services -->
-  <div class="services-container">
-    <div class="service">
-      <img src="https://via.placeholder.com/100" alt="Shylock Services">
-      <h3>Shylock Loans</h3>
-      <p>Short-term loans at competitive rates with flexible terms. Trusted by over 15 steady clients.</p>
-    </div>
-    <div class="service">
-      <img src="https://via.placeholder.com/100" alt="Poultry Services">
-      <h3>Poultry Advisory</h3>
-      <p>Expert support in raising ornamental birds including turkeys, guinea fowl, and geese.</p>
-    </div>
-    <div class="service">
-      <img src="https://via.placeholder.com/100" alt="Farm Supplies">
-      <h3>Agro Supplies</h3>
-      <p>Access high-quality feed, equipment, and supplements through our verified partner network.</p>
-    </div>
-    <div class="service">
-      <img src="https://via.placeholder.com/100" alt="Training">
-      <h3>Farm Training</h3>
-      <p>Attend seasonal trainings and online sessions for modern farming skills and digital tools.</p>
-      <!-- Google AdSense Placeholder -->
-<div style="margin: 30px auto; max-width: 728px; text-align: center; border: 1px dashed #ccc; padding: 20px;">
-  <strong>AdSense Ad Slot</strong><br>
-  <em>This is where your ad will appear once AdSense is approved.</em>
-</div>
+  <!-- Service Listings -->
+  <div class="section">
+    <h2>What We Offer</h2>
+    <div class="services">
+
+      <!-- Service 1 -->
+      <div class="card">
+        <img src="https://img.icons8.com/fluency/96/tractor.png" alt="Farming Advisory">
+        <h3>Farming Advisory</h3>
+        <p>Get expert guidance on poultry, crop production, ornamental bird farming, and more.</p>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="card">
+        <img src="https://img.icons8.com/color/96/money.png" alt="Shylock Loans">
+        <h3>Microloans (Shylock)</h3>
+        <p>Short-term loans for trusted clients with up to 30% returns in two weeks.</p>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="card">
+        <img src="https://img.icons8.com/color/96/web-analytics.png" alt="Digital Tools">
+        <h3>Tech for Farmers</h3>
+        <p>Apps, sensors, and digital support to automate and track your agricultural business.</p>
+      </div>
+
+      <!-- Service 4 -->
+      <div class="card">
+        <img src="https://img.icons8.com/color/96/online-store.png" alt="eCommerce">
+        <h3>Online Market Listing</h3>
+        <p>Promote and sell your farm products globally via our online platform.</p>
+      </div>
+
+      <!-- Service 5 -->
+      <div class="card">
+        <img src="https://img.icons8.com/color/96/supplier.png" alt="Sourcing">
+        <h3>Agro Input Sourcing</h3>
+        <p>Access quality seeds, feeds, vaccines, and farming tools directly from verified suppliers.</p>
+      </div>
+
+      <!-- Service 6 -->
+      <div class="card">
+        <img src="https://img.icons8.com/color/96/graph-report.png" alt="Market Reports">
+        <h3>Weekly Market Insights</h3>
+        <p>Stay updated with agriculture news, pricing trends, and opportunities across Kenya.</p>
+      </div>
 
     </div>
-  </div>
-
-  <!-- AdSense Placeholder -->
-  <div style="margin: 30px auto; max-width: 728px; text-align: center; border: 1px dashed #ccc; padding: 20px;">
-    <strong>AdSense Ad Slot</strong><br>
-    <em>This is where your ad will appear once AdSense is approved.</em>
   </div>
 
   <!-- Footer -->
-  <footer style="background: #222; color: white; text-align: center; padding: 20px 10px;">
-    <p>&copy; 2025 Odiems Limited. All rights reserved.</p>
-    <p><a href="privacy.html" style="color: #ddd; text-decoration: underline;">Privacy Policy</a> | <a href="contact.html" style="color: #ddd; text-decoration: underline;">Contact Us</a></p>
-    <div style="margin-top: 10px;">
-      <a href="#" style="color: #ddd; margin: 0 10px;">Facebook</a>
-      <a href="#" style="color: #ddd; margin: 0 10px;">Instagram</a>
-      <a href="#" style="color: #ddd; margin: 0 10px;">WhatsApp</a>
-    </div>
+  <footer>
+    <p>&copy; 2025 Odiems Limited | <a href="privacy.html" style="color:#fff;">Privacy Policy</a> | <a href="terms.html" style="color:#fff;">Terms</a></p>
   </footer>
 
-  <!-- WhatsApp Chat Button -->
-  <a href="https://wa.me/254700000000" target="_blank" style="position: fixed; bottom: 20px; right: 20px; background: #25D366; color: white; padding: 10px 15px; border-radius: 50px; text-decoration: none; box-shadow: 0 2px 5px rgba(0,0,0,0.3); font-weight: bold;">
-    Chat with us
-  </a>
-  <!-- WhatsApp Chat Button -->
-<a href="https://wa.me/254795179287" 
-   style="position:fixed; bottom:20px; right:20px; background:#25D366; color:white; padding:12px 15px; 
-          border-radius:50px; text-decoration:none; font-weight:bold; box-shadow:0 4px 8px rgba(0,0,0,0.3);">
-  💬 Chat with Us
-</a>
 </body>
 </html>
