@@ -1,190 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head <link rel="stylesheet" href="styles.css" />
->
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y1CFKRGQXV"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-Y1CFKRGQXV');
-</script>
+<head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Odiems Limited - Home</title>
-  <meta name="description" content="Odiems Limited: Advancing agriculture and IT solutions from Kenya to the world.">
+  <title>Odiems Limited - Empowering Agriculture</title>
   <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      background-color: #f4f4f4;
+      padding: 0;
+      background: #f3f3f3;
+      color: #222;
     }
-
     header {
-      background: #2c3e50;
-      color: #fff;
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    nav a {
-      color: #fff;
-      margin-left: 1rem;
-      text-decoration: none;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    .hero {
-      background: url('https://images.unsplash.com/photo-1603876987557-b5a5b1b8e401') center/cover no-repeat;
+      background: url('https://images.unsplash.com/photo-1576086213369-97a306d36512?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
       color: white;
-      padding: 6rem 2rem;
+      padding: 100px 20px;
       text-align: center;
     }
-
-    .hero h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
+    header h1 {
+      font-size: 3em;
+      margin: 0;
     }
-
-    .section {
-      padding: 3rem 2rem;
+    header p {
+      font-size: 1.5em;
+      margin: 15px 0 30px;
+    }
+    .btn {
+      background: #006400;
+      color: white;
+      padding: 12px 25px;
+      margin: 10px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #228b22;
+    }
+    main {
       max-width: 1000px;
-      margin: auto;
+      margin: 40px auto;
+      padding: 0 20px;
     }
-
-    .services {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
+    .section {
+      margin-bottom: 40px;
     }
-
-    .service {
-      flex: 1 1 300px;
-      background: white;
-      padding: 1.5rem;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    .section h2 {
+      color: #006400;
+      margin-bottom: 10px;
     }
-
     footer {
-      background: #333;
+      background: #004225;
       color: white;
       text-align: center;
-      padding: 2rem;
-      margin-top: 3rem;
+      padding: 20px;
     }
-
-    .socials a {
-      margin: 0 0.5rem;
-      color: #ddd;
-      text-decoration: none;
+    .cta-links {
+      margin-top: 20px;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <div><strong>Odiems Limited</strong></div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="blog.html">Blog</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <h1>Odiems Limited</h1>
+    <p>Empowering Agriculture with Innovation & Opportunity</p>
+    <div class="cta-links">
+      <a href="products.html" class="btn">Explore Products</a>
+      <a href="blog.html" class="btn">Read Our Blog</a>
+      <a href="contact.html" class="btn">Contact Us</a>
+    </div>
   </header>
 
-  <section class="hero">
-    <h1>Welcome to Odiems Limited</h1>
-    <p>Empowering Agriculture & Technology in Kenya and Beyond</p>
-  </section>
+  <main>
+    <section class="section">
+      <h2>Welcome to Odiems Limited</h2>
+      <p>
+        We are a Kenyan-based agribusiness company passionate about mixed farming, agri-tech, and rural transformation. 
+        From high-quality poultry and ornamental birds to innovative agri-financing and farming consultancy, we help farmers thrive.
+      </p>
+    </section>
 
-  <section class="section">
-    <h2>About Us</h2>
-    <p>We are a Kisumu-based mixed farming and IT solutions company focused on sustainable practices, digital empowerment, and global reach. From crops and livestock to software and online tools, we help farmers and tech users thrive.</p>
-  </section>
+    <section class="section">
+      <h2>Our Offerings</h2>
+      <ul>
+        <li>✅ Poultry & Ornamental Birds</li>
+        <li>✅ Farming Inputs & Tools</li>
+        <li>✅ Shylock Loans (30% return in 2 weeks)</li>
+        <li>✅ Agribusiness Consultancy & Training</li>
+      </ul>
+    </section>
 
-  <section class="section">
-    <h2>Our Services</h2>
-    <div class="services">
-      <div class="service">
-        <h3>Mixed Farming</h3>
-        <p>We grow and supply organic crops and livestock, ensuring food security and quality.</p>
-      </div>
-      <div class="service">
-        <h3>ICT Solutions</h3>
-        <p>We develop custom digital tools, websites, and software for agricultural and business use.</p>
-      </div>
-      <div class="service">
-        <h3>Training & Consultation</h3>
-        <p>Get expert advice on farming, agri-tech, and ICT applications from our team.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" style="text-align:center;">
-    <h2>Ready to Work With Us?</h2>
-    <p><a href="contact.html">Contact us</a> or <a href="services.html">explore our services</a> to get started.</p>
-  </section>
+    <section class="section">
+      <h2>Join Our Vision</h2>
+      <p>
+        Our goal is to be East Africa’s most trusted platform for sustainable agricultural growth by 2030.
+        Join us on this journey — whether you're a farmer, investor, or agri-enthusiast, there's a place for you here.
+      </p>
+      <a href="about.html" class="btn">Learn More About Us</a>
+    </section>
+  </main>
 
   <footer>
-    <p>&copy; 2025 Odiems Limited. All rights reserved.</p>
-    <p>Phone: 0795179287 | Email: info@odiemslimited.com | Kisumu, Kenya</p>
-    <div class="socials">
-      <a href="#">Facebook</a> |
-      <a href="#">Twitter</a> |
-      <a href="#">Instagram</a>
-    </div>
+    <p>&copy; 2025 Odiems Limited. All Rights Reserved. | <a href="privacy.html" style="color:#aaffaa;">Privacy Policy</a></p>
   </footer>
-
-  <!-- Google AdSense placeholder -->
-  <!--
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  <ins class="adsbygoogle"
-       style="display:block"
-       data-ad-client="ca-pub-xxxxxxxxxxxxxxx"
-       data-ad-slot="1234567890"
-       data-ad-format="auto"></ins>
-  <script>
-       (adsbygoogle = window.adsbygoogle || []).push({});
-  </script>
-  -->
-<!-- Floating WhatsApp Button -->
-<a href="https://wa.me/254795179287" 
-   class="whatsapp-float" 
-   target="_blank" 
-   title="Chat with us on WhatsApp">
-  💬
-</a>
-
-<style>
-  .whatsapp-float {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #25D366;
-    color: white;
-    font-size: 2rem;
-    padding: 0.5rem 1rem;
-    border-radius: 50%;
-    text-decoration: none;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-    z-index: 999;
-    transition: background 0.3s;
-  }
-
-  .whatsapp-float:hover {
-    background: #128C7E;
-  }
-</style>
 
 </body>
 </html>
