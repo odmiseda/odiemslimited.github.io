@@ -2,36 +2,66 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Explore agricultural and tech products from Odiems Limited, Kenya">
-  <meta name="keywords" content="Odiems Limited Products, Agriculture, Seeds, Feeds, Ornamental Birds, Kenya Farming">
-  <meta name="author" content="Odiems Limited">
-  <title>Products | Odiems Limited</title>
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore a variety of agricultural products by Odiems Limited. We provide quality farm produce, birds, and agro-solutions across Kenya." />
+  <title>Our Products | Odiems Limited</title>
+  <link rel="stylesheet" href="style.css" />
   <style>
-    body { margin: 0; font-family: Arial, sans-serif; background: #f9f9f9; color: #333; }
-    header, footer { background: #2e7d32; color: #fff; padding: 15px 20px; }
-    nav a { color: #fff; margin: 0 10px; text-decoration: none; font-weight: bold; }
-    .hero { background: url('https://via.placeholder.com/1200x300?text=Our+Products') no-repeat center center; background-size: cover; padding: 80px 20px; color: white; text-align: center; text-shadow: 2px 2px 5px #000; }
-    .section { padding: 40px 20px; max-width: 1000px; margin: auto; }
-    .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
-    .card {
-      background: white; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      padding: 20px; text-align: center;
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f2f7fa;
+      color: #333;
     }
-    .card img { max-width: 100%; border-radius: 5px; }
-    h2 { color: #2e7d32; }
-    .card h3 { margin: 10px 0 5px; color: #444; }
-    .card p { font-size: 14px; color: #555; }
-    footer { text-align: center; font-size: 14px; }
-    @media (max-width: 600px) {
-      .hero { padding: 60px 20px; font-size: 90%; }
+    header, footer {
+      background: #004080;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 8px;
+    }
+    h1, h2 {
+      color: #004080;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .product-card {
+      background: #fefefe;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      transition: box-shadow 0.3s ease;
+    }
+    .product-card:hover {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .product-card h3 {
+      color: #007bff;
+      margin-top: 0;
+    }
+    footer p {
+      font-size: 0.9em;
     }
   </style>
 </head>
 <body>
-
-  <!-- Header -->
   <header>
     <h1>Odiems Limited</h1>
     <nav>
@@ -44,66 +74,48 @@
     </nav>
   </header>
 
-  <!-- Hero -->
-  <div class="hero">
+  <div class="container">
     <h2>Our Products</h2>
-    <p>Quality agricultural and tech-driven products for your success</p>
-  </div>
+    <p>We supply a diverse range of high-quality agricultural products to meet your food and farming needs. Below is a selection of our current offerings:</p>
 
-  <!-- Product Listings -->
-  <div class="section">
-    <h2>Featured Products</h2>
-    <div class="products">
-
-      <!-- Product 1 -->
-      <div class="card">
-        <img src="https://via.placeholder.com/300x200?text=Ornamental+Birds" alt="Ornamental Birds">
-        <h3>Ornamental Birds</h3>
-        <p>Geese, turkeys, and guinea fowls for breeding and aesthetics</p>
+    <div class="product-grid">
+      <div class="product-card">
+        <h3>Indigenous Chickens</h3>
+        <p>Strong, disease-resistant breeds for meat and eggs. Ideal for small- and large-scale poultry farming.</p>
       </div>
-
-      <!-- Product 2 -->
-      <div class="card">
-        <img src="https://via.placeholder.com/300x200?text=Chickens" alt="Chickens">
-        <h3>Improved Kienyeji Chickens</h3>
-        <p>Hardy, nutritious, and well-adapted for Kenyan conditions</p>
+      <div class="product-card">
+        <h3>Guinea Fowls</h3>
+        <p>Exotic and ornamental birds for meat and resale. High demand across Kenya and East Africa.</p>
       </div>
-
-      <!-- Product 3 -->
-      <div class="card">
-        <img src="https://via.placeholder.com/300x200?text=Seeds" alt="Seeds">
-        <h3>Certified Seeds</h3>
-        <p>High-yield seeds for maize, vegetables, and legumes</p>
+      <div class="product-card">
+        <h3>Turkeys</h3>
+        <p>Available for breeding and meat production. We offer both local and improved varieties.</p>
       </div>
-
-      <!-- Product 4 -->
-      <div class="card">
-        <img src="https://via.placeholder.com/300x200?text=Animal+Feeds" alt="Feeds">
-        <h3>Animal Feeds</h3>
-        <p>Nutrient-rich feeds for poultry, cattle, and other livestock</p>
+      <div class="product-card">
+        <h3>Geese</h3>
+        <p>Unique ornamental birds, highly sought for breeding, resale, and traditional dishes.</p>
       </div>
-
-      <!-- Product 5 -->
-      <div class="card">
-        <img src="https://via.placeholder.com/300x200?text=Farm+Tech+Tools" alt="Tech Tools">
-        <h3>Farm Tech Tools</h3>
-        <p>Record-keeping apps, sensors, and digital support solutions</p>
+      <div class="product-card">
+        <h3>Fresh Farm Produce</h3>
+        <p>Organic vegetables and fruits including tomatoes, sukuma wiki, bananas, and more.</p>
       </div>
-
-      <!-- Product 6 -->
-      <div class="card">
-        <img src="https://via.placeholder.com/300x200?text=Fertilizers" alt="Fertilizers">
-        <h3>Organic Fertilizers</h3>
-        <p>Eco-friendly, soil-enhancing fertilizers to boost yield</p>
+      <div class="product-card">
+        <h3>Maize and Beans</h3>
+        <p>Grown using eco-friendly techniques. We offer bulk delivery to schools, markets, and homes.</p>
       </div>
-
+      <div class="product-card">
+        <h3>Agro-inputs (Coming Soon)</h3>
+        <p>We will soon stock certified seeds, organic manure, and modern irrigation tools.</p>
+      </div>
+      <div class="product-card">
+        <h3>Export-Grade Herbs</h3>
+        <p>Specialty herbs like rosemary and basil grown organically for niche markets.</p>
+      </div>
     </div>
   </div>
 
-  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Odiems Limited | <a href="privacy.html" style="color:#fff;">Privacy Policy</a> | <a href="terms.html" style="color:#fff;">Terms</a></p>
+    <p>&copy; 2025 Odiems Limited. All rights reserved.</p>
   </footer>
-
 </body>
 </html>
