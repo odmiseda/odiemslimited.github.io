@@ -1,4 +1,3 @@
 User-agent: *
-Disallow:
-
-Sitemap: https://www.odiemslimited.com/sitemap.xml
+Allow: /
+Sitemap: https://www.odiems.com/sitemap.xml
