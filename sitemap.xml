@@ -1,29 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.odiemslimited.com/</loc>
+    <loc>https://www.odiems.com/</loc>
     <lastmod>2025-07-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <priority>1.00</priority>
   </url>
   <url>
-    <loc>https://www.odiemslimited.com/about.html</loc>
+    <loc>https://www.odiems.com/about.html</loc>
     <lastmod>2025-07-21</lastmod>
-    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.odiemslimited.com/products.html</loc>
+    <loc>https://www.odiems.com/products.html</loc>
+    <lastmod>2025-07-21</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.odiemslimited.com/services.html</loc>
+    <loc>https://www.odiems.com/services.html</loc>
+    <lastmod>2025-07-21</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.odiemslimited.com/blog.html</loc>
+    <loc>https://www.odiems.com/blog.html</loc>
+    <lastmod>2025-07-21</lastmod>
+    <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://www.odiemslimited.com/privacy.html</loc>
+    <loc>https://www.odiems.com/contact.html</loc>
+    <lastmod>2025-07-21</lastmod>
+    <priority>0.60</priority>
   </url>
   <url>
-    <loc>https://www.odiemslimited.com/terms.html</loc>
+    <loc>https://www.odiems.com/privacy.html</loc>
+    <lastmod>2025-07-21</lastmod>
+    <priority>0.50</priority>
+  </url>
+  <url>
+    <loc>https://www.odiems.com/terms.html</loc>
+    <lastmod>2025-07-21</lastmod>
+    <priority>0.50</priority>
   </url>
 </urlset>
