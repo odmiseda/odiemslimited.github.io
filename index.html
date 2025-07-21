@@ -1,77 +1,81 @@
-<!-- index.html -->
+<!-- index.html: Homepage for Odiems Limited -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Odiems Limited - Agriculture, Innovation & Sustainability">
-  <meta name="keywords" content="Agriculture, AgriTech, Kenya, Odiems, Farming, Sustainable Agriculture">
-  <meta name="author" content="Odiems Limited">
-  <title>Odiems Limited | Agriculture & Innovation</title>
+  <meta name="description" content="Odiems Limited - Agricultural and Technological Solutions in Kenya and Beyond" />
+  <meta name="keywords" content="Agriculture, Technology, Kenya, Farming, ICT, Innovation, Odiems Limited" />
+  <meta name="author" content="Odiems Limited" />
+  <title>Odiems Limited | Smart Agriculture & Tech Solutions</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <div class="top-bar">
-      <p>Contact us: 0795179287 | Email: info@odiems.com</p>
+  <header class="site-header">
+    <div class="container">
+      <div class="branding">
+        <h1><a href="index.html">Odiems Limited</a></h1>
+        <p>Smart Agriculture & Tech Solutions</p>
+      </div>
+      <nav class="site-nav">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav>
-      <div class="logo">Odiems Limited</div>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
   </header>
 
   <section class="hero">
-    <h1>Welcome to Odiems Limited</h1>
-    <p>Empowering Agriculture through Innovation and Technology</p>
-    <a href="#newsletter" class="btn-primary">Subscribe for Updates</a>
+    <div class="container">
+      <h2>Transforming Agriculture Through Innovation</h2>
+      <p>We provide sustainable farming and smart tech solutions for modern agribusiness in Kenya and globally.</p>
+      <a href="contact.html" class="btn">Get in Touch</a>
+    </div>
   </section>
 
   <section class="features">
-    <div class="feature">
-      <h3>Sustainable Farming</h3>
-      <p>We promote eco-friendly and profitable farming methods for all.</p>
+    <div class="container">
+      <div class="feature">
+        <img src="images/smart-farm.jpg" alt="Smart Farming" />
+        <h3>Smart Farming</h3>
+        <p>Adopt data-driven, tech-enabled farming methods that boost productivity and resilience.</p>
+      </div>
+      <div class="feature">
+        <img src="images/export-produce.jpg" alt="Export-Ready Produce" />
+        <h3>Export-Ready Produce</h3>
+        <p>We grow and aggregate top-quality produce ready for both local and international markets.</p>
+      </div>
+      <div class="feature">
+        <img src="images/consulting.jpg" alt="AgriTech Consulting" />
+        <h3>AgriTech Consulting</h3>
+        <p>Access expert advice and project support for agribusiness ventures, ICT in farming, and sustainability.</p>
+      </div>
     </div>
-    <div class="feature">
-      <h3>Smart AgriTech</h3>
-      <p>From IoT to AI, we empower farmers with smart digital tools.</p>
+  </section>
+
+  <section class="newsletter">
+    <div class="container">
+      <h2>Subscribe for Updates</h2>
+      <p>Join our mailing list for agricultural tips, news, and investment opportunities.</p>
+      <!-- Mailchimp embedded form -->
+      <form action="https://YOUR_MAILCHIMP_URL" method="post" target="_blank" novalidate>
+        <input type="email" name="EMAIL" placeholder="Your Email Address" required>
+        <button type="submit">Subscribe</button>
+      </form>
     </div>
-    <div class="feature">
-      <h3>Market Access</h3>
-      <p>Connect farmers with buyers locally and globally through Odiems.</p>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Odiems Limited | All Rights Reserved</p>
+      <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms & Conditions</a></p>
+      <p>Call Us: <a href="tel:+254795179287">+254 795 179 287</a></p>
     </div>
-  </section>
-
-  <section class="callout">
-    <h2>Join our Agricultural Revolution</h2>
-    <p>We're transforming farming in Africa, one innovation at a time.</p>
-    <a href="about.html" class="btn-secondary">Learn More</a>
-  </section>
-
-  <section id="newsletter" class="newsletter">
-    <h2>📬 Subscribe to our Newsletter</h2>
-    <form action="https://your-mailchimp-post-url" method="POST" target="_blank">
-      <input type="email" name="EMAIL" placeholder="Enter your email" required />
-      <button type="submit">Subscribe</button>
-    </form>
-  </section>
-
-  <section class="blog-preview">
-    <h2>📖 Our Blog</h2>
-    <p>Read insights, tips, and news from our Blogger page.</p>
-    <a href="https://odiemsltd.blogspot.com/?m=1" class="btn-primary" target="_blank">Visit Blog</a>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Odiems Limited. All rights reserved.</p>
-    <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms & Conditions</a></p>
   </footer>
 </body>
 </html>
