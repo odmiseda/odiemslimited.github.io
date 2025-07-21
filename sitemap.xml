@@ -3,11 +3,13 @@
   <url>
     <loc>https://www.odiemslimited.com/</loc>
     <lastmod>2025-07-21</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.odiemslimited.com/about.html</loc>
     <lastmod>2025-07-21</lastmod>
+    <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://www.odiemslimited.com/products.html</loc>
@@ -16,7 +18,7 @@
     <loc>https://www.odiemslimited.com/services.html</loc>
   </url>
   <url>
-    <loc>https://www.odiemslimited.com/contact.html</loc>
+    <loc>https://www.odiemslimited.com/blog.html</loc>
   </url>
   <url>
     <loc>https://www.odiemslimited.com/privacy.html</loc>
