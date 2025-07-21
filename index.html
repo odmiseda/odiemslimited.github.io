@@ -1,34 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Odiems Limited - Agriculture & IT Solutions for a better future in Kenya and beyond">
-  <title>Odiems Limited | Home</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" type="image/png" href="/favicon.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Odiems Limited - Promoting Agriculture & Technology for a Sustainable Future">
+  <meta name="keywords" content="Odiems Limited, Agriculture Kenya, AgriTech, Mixed Farming, Farm Products, Information Technology, Kenya Agribusiness">
+  <meta name="author" content="Odiems Limited">
+  <title>Odiems Limited | Agriculture & Technology</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-    header, nav, footer { background-color: #004225; color: white; text-align: center; padding: 15px 0; }
-    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
-    .hero { background: url('hero.jpg') no-repeat center center/cover; padding: 100px 20px; color: white; text-align: center; }
-    .hero h1 { font-size: 3em; margin: 0; }
-    .content { padding: 40px 20px; max-width: 1000px; margin: auto; text-align: center; }
-    .features { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
-    .feature { background: #f4f4f4; border-radius: 8px; padding: 20px; width: 300px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-    footer p { margin: 5px 0; font-size: 0.9em; }
-    @media (max-width: 768px) {
+    body { margin: 0; font-family: Arial, sans-serif; background: #f9f9f9; }
+    header, footer { background: #2e7d32; color: #fff; padding: 15px 20px; }
+    nav a { color: #fff; margin: 0 10px; text-decoration: none; font-weight: bold; }
+    .ticker { background: #ffcc00; color: #000; text-align: center; padding: 8px; font-weight: bold; }
+    .hero { background: url('https://via.placeholder.com/1200x400?text=Welcome+to+Odiems+Limited') no-repeat center center; background-size: cover; padding: 100px 20px; color: white; text-shadow: 2px 2px 5px #000; text-align: center; }
+    .section { padding: 40px 20px; text-align: center; }
+    .features { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+    .card { background: white; padding: 20px; border-radius: 8px; width: 280px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    form input, form button { padding: 10px; margin: 5px; width: 250px; max-width: 100%; }
+    footer { text-align: center; font-size: 14px; }
+    @media (max-width: 600px) {
       .features { flex-direction: column; align-items: center; }
     }
   </style>
 </head>
 <body>
-  <!-- News Ticker -->
-  <div style="background: #ffcc00; color: #000; padding: 10px; text-align: center; font-weight: bold;">
-    📢 New product launch this August – Stay tuned for updates!
-  </div>
 
-  <!-- Navigation Bar -->
+  <!-- News Ticker -->
+  <div class="ticker">📢 New product launch this August – Stay tuned!</div>
+
+  <!-- Header -->
   <header>
     <h1>Odiems Limited</h1>
     <nav>
@@ -41,46 +42,58 @@
     </nav>
   </header>
 
-  <!-- Hero Section -->
+  <!-- Hero Banner -->
   <div class="hero">
-    <h1>Empowering Agriculture & Technology</h1>
-    <p>Innovative solutions for farmers, tech lovers, and businesses.</p>
+    <h2>Innovating Agriculture with Technology</h2>
+    <p>Empowering Farmers. Enhancing Yields. Building Kenya’s Future.</p>
   </div>
 
-  <!-- Main Content -->
-  <div class="content">
-    <h2>What We Do</h2>
+  <!-- Features Section -->
+  <div class="section">
+    <h2>What We Offer</h2>
     <div class="features">
-      <div class="feature">
-        <h3>Farming Solutions</h3>
-        <p>From seed to harvest, we help farmers succeed with innovative techniques and reliable products.</p>
+      <div class="card">
+        <h3>Mixed Farming</h3>
+        <p>From poultry to ornamentals, we support diversified farm ventures.</p>
       </div>
-      <div class="feature">
-        <h3>IT & Digital Tools</h3>
-        <p>Boost your agribusiness with modern tech – from websites to mobile tools and data systems.</p>
+      <div class="card">
+        <h3>AgriTech Tools</h3>
+        <p>Use data & tools to monitor and optimize your farm productivity.</p>
       </div>
-      <div class="feature">
-        <h3>Training & Support</h3>
-        <p>Capacity building, workshops, and hands-on support to empower rural communities and tech adoption.</p>
+      <div class="card">
+        <h3>Farm Inputs</h3>
+        <p>Access high-quality seeds, feeds, and fertilizers through our platform.</p>
       </div>
     </div>
   </div>
 
-  <!-- Email Subscription Form -->
-  <div style="max-width: 400px; margin: auto; padding: 20px; border: 2px solid #004225; border-radius: 10px; background: #f9f9f9;">
-    <h2 style="color:#004225; text-align:center;">Subscribe to Our Newsletter</h2>
-    <form action="https://YOUR_MAILCHIMP_URL" method="post" target="_blank" novalidate>
-      <label for="email">Email Address:</label><br>
-      <input type="email" name="EMAIL" id="email" required style="width: 100%; padding: 10px; margin-top: 10px;">
-      <br><br>
-      <button type="submit" style="width: 100%; padding: 10px; background: #004225; color: #fff; border: none; cursor: pointer;">Subscribe</button>
+  <!-- Email Subscription (Mailchimp-ready) -->
+  <div class="section" style="background: #e8f5e9;">
+    <h2>Subscribe for Updates</h2>
+    <form action="https://YOUR-MAILCHIMP-URL" method="post" target="_blank">
+      <input type="email" name="EMAIL" placeholder="Enter your email" required />
+      <button type="submit">Subscribe</button>
     </form>
+  </div>
+
+  <!-- Google AdSense Placeholder -->
+  <div class="section">
+    <h2>Sponsored</h2>
+    <div style="background:#f0f0f0; padding:20px;">
+      <p>AdSense Placeholder – Ads will appear here when approved.</p>
+    </div>
   </div>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Odiems Limited. All Rights Reserved.</p>
-    <p><a href="privacy.html" style="color:white;">Privacy Policy</a> | <a href="terms.html" style="color:white;">Terms of Service</a></p>
+    <p>&copy; 2025 Odiems Limited | <a href="privacy.html" style="color:#fff;">Privacy Policy</a> | <a href="terms.html" style="color:#fff;">Terms</a></p>
   </footer>
+
+  <!-- Chat Widget Placeholder -->
+  <script>
+    // Optional: Embed Tawk.to, WhatsApp, or Messenger script here.
+    console.log("Chat widget placeholder ready.");
+  </script>
+
 </body>
 </html>
