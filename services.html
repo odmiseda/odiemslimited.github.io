@@ -2,36 +2,62 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Odiems Limited - Agricultural, Tech and Financial Services in Kenya">
-  <meta name="keywords" content="Agricultural Services, Tech Solutions, Shylock Loans, Kenya, Farming">
-  <meta name="author" content="Odiems Limited">
-  <title>Services | Odiems Limited</title>
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Discover our professional agricultural services including consultancy, poultry training, farm setup, and agribusiness support across Kenya.">
+  <title>Our Services | Odiems Limited</title>
+  <link rel="stylesheet" href="style.css" />
   <style>
-    body { margin: 0; font-family: Arial, sans-serif; background: #f8f9fa; color: #333; }
-    header, footer { background: #2e7d32; color: #fff; padding: 15px 20px; }
-    nav a { color: #fff; margin: 0 10px; text-decoration: none; font-weight: bold; }
-    .hero { background: url('https://via.placeholder.com/1200x300?text=Our+Services') no-repeat center center; background-size: cover; padding: 80px 20px; color: white; text-align: center; text-shadow: 2px 2px 5px #000; }
-    .section { padding: 40px 20px; max-width: 1000px; margin: auto; }
-    .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
-    .card {
-      background: white; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      padding: 20px; text-align: center;
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f9fcff;
+      margin: 0;
+      padding: 0;
+      color: #333;
     }
-    .card img { max-width: 100px; height: 100px; margin-bottom: 15px; }
-    h2 { color: #2e7d32; }
-    .card h3 { margin: 10px 0 5px; color: #444; }
-    .card p { font-size: 14px; color: #555; }
-    footer { text-align: center; font-size: 14px; }
-    @media (max-width: 600px) {
-      .hero { padding: 60px 20px; font-size: 90%; }
+    header, footer {
+      background: #004080;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 8px;
+    }
+    h1, h2 {
+      color: #004080;
+    }
+    .service-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .service-card {
+      background: #f0f8ff;
+      padding: 20px;
+      border-radius: 10px;
+      border-left: 5px solid #007bff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      transition: transform 0.3s;
+    }
+    .service-card:hover {
+      transform: translateY(-4px);
+    }
+    footer p {
+      font-size: 0.9em;
     }
   </style>
 </head>
 <body>
-
-  <!-- Header -->
   <header>
     <h1>Odiems Limited</h1>
     <nav>
@@ -44,66 +70,40 @@
     </nav>
   </header>
 
-  <!-- Hero -->
-  <div class="hero">
+  <div class="container">
     <h2>Our Services</h2>
-    <p>Empowering farmers and tech-savvy entrepreneurs across Kenya</p>
-  </div>
+    <p>We go beyond supplying farm products. Odiems Limited is committed to empowering farmers, improving food security, and delivering agribusiness value. Below are our key service offerings:</p>
 
-  <!-- Service Listings -->
-  <div class="section">
-    <h2>What We Offer</h2>
-    <div class="services">
-
-      <!-- Service 1 -->
-      <div class="card">
-        <img src="https://img.icons8.com/fluency/96/tractor.png" alt="Farming Advisory">
-        <h3>Farming Advisory</h3>
-        <p>Get expert guidance on poultry, crop production, ornamental bird farming, and more.</p>
+    <div class="service-list">
+      <div class="service-card">
+        <h3>Agribusiness Consultancy</h3>
+        <p>Strategic advice for startups and existing farms. We help you plan, manage, and scale your agricultural venture profitably.</p>
       </div>
-
-      <!-- Service 2 -->
-      <div class="card">
-        <img src="https://img.icons8.com/color/96/money.png" alt="Shylock Loans">
-        <h3>Microloans (Shylock)</h3>
-        <p>Short-term loans for trusted clients with up to 30% returns in two weeks.</p>
+      <div class="service-card">
+        <h3>Farm Setup & Expansion</h3>
+        <p>From land assessment, crop selection, to poultry and bird structures — we guide you to set up modern and sustainable farms.</p>
       </div>
-
-      <!-- Service 3 -->
-      <div class="card">
-        <img src="https://img.icons8.com/color/96/web-analytics.png" alt="Digital Tools">
-        <h3>Tech for Farmers</h3>
-        <p>Apps, sensors, and digital support to automate and track your agricultural business.</p>
+      <div class="service-card">
+        <h3>Poultry Training</h3>
+        <p>We offer hands-on training in rearing indigenous chickens, turkeys, guinea fowls, and geese. Learn from experts and boost your yield.</p>
       </div>
-
-      <!-- Service 4 -->
-      <div class="card">
-        <img src="https://img.icons8.com/color/96/online-store.png" alt="eCommerce">
-        <h3>Online Market Listing</h3>
-        <p>Promote and sell your farm products globally via our online platform.</p>
+      <div class="service-card">
+        <h3>Input Sourcing Support</h3>
+        <p>We connect you to genuine suppliers of seeds, feeds, and veterinary inputs. Quality assured for better productivity.</p>
       </div>
-
-      <!-- Service 5 -->
-      <div class="card">
-        <img src="https://img.icons8.com/color/96/supplier.png" alt="Sourcing">
-        <h3>Agro Input Sourcing</h3>
-        <p>Access quality seeds, feeds, vaccines, and farming tools directly from verified suppliers.</p>
+      <div class="service-card">
+        <h3>Market Linkages</h3>
+        <p>Get access to buyers, processors, and export markets. We help farmers turn their harvest into income.</p>
       </div>
-
-      <!-- Service 6 -->
-      <div class="card">
-        <img src="https://img.icons8.com/color/96/graph-report.png" alt="Market Reports">
-        <h3>Weekly Market Insights</h3>
-        <p>Stay updated with agriculture news, pricing trends, and opportunities across Kenya.</p>
+      <div class="service-card">
+        <h3>Agri-Finance Guidance</h3>
+        <p>Need funding? We guide you on how to access agri-loans, grants, and investment partnerships with our financial partners.</p>
       </div>
-
     </div>
   </div>
 
-  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Odiems Limited | <a href="privacy.html" style="color:#fff;">Privacy Policy</a> | <a href="terms.html" style="color:#fff;">Terms</a></p>
+    <p>&copy; 2025 Odiems Limited. All rights reserved.</p>
   </footer>
-
 </body>
 </html>
