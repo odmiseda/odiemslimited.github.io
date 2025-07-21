@@ -1,121 +1,63 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Explore a variety of agricultural products by Odiems Limited. We provide quality farm produce, birds, and agro-solutions across Kenya." />
-  <title>Our Products | Odiems Limited</title>
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f2f7fa;
-      color: #333;
-    }
-    header, footer {
-      background: #004080;
-      color: #fff;
-      padding: 20px 0;
-      text-align: center;
-    }
-    nav a {
-      color: #fff;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: 500;
-    }
-    .container {
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 20px;
-      background: #fff;
-      border-radius: 8px;
-    }
-    h1, h2 {
-      color: #004080;
-    }
-    .product-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      margin-top: 20px;
-    }
-    .product-card {
-      background: #fefefe;
-      padding: 15px;
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      transition: box-shadow 0.3s ease;
-    }
-    .product-card:hover {
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-    .product-card h3 {
-      color: #007bff;
-      margin-top: 0;
-    }
-    footer p {
-      font-size: 0.9em;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="High-quality agricultural and ICT products from Odiems Limited.">
+  <title>Products | Odiems Limited</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
-    <h1>Odiems Limited</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="products.html">Products</a>
-      <a href="services.html">Services</a>
-      <a href="blog.html">Blog</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
-
-  <div class="container">
-    <h2>Our Products</h2>
-    <p>We supply a diverse range of high-quality agricultural products to meet your food and farming needs. Below is a selection of our current offerings:</p>
-
-    <div class="product-grid">
-      <div class="product-card">
-        <h3>Indigenous Chickens</h3>
-        <p>Strong, disease-resistant breeds for meat and eggs. Ideal for small- and large-scale poultry farming.</p>
+    <div class="container">
+      <h1>Our Products</h1>
+      <p>Explore our range of quality agricultural and ICT solutions.</p>
+    </div>
+  </header>  <main class="container">
+    <section class="product-category">
+      <h2>Agricultural Products</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="images/feeds.jpg" alt="Animal Feeds">
+          <h3>Animal Feeds</h3>
+          <p>Nutritious poultry and livestock feeds formulated for optimal growth and health.</p>
+        </div>
+        <div class="product-card">
+          <img src="images/birds.jpg" alt="Ornamental Birds">
+          <h3>Ornamental Birds</h3>
+          <p>Healthy geese, turkeys, and guineafowls raised under hygienic conditions.</p>
+        </div>
+        <div class="product-card">
+          <img src="images/eggs.jpg" alt="Eggs & Poultry">
+          <h3>Eggs & Poultry</h3>
+          <p>Fresh eggs and quality local chicken for home or business consumption.</p>
+        </div>
       </div>
-      <div class="product-card">
-        <h3>Guinea Fowls</h3>
-        <p>Exotic and ornamental birds for meat and resale. High demand across Kenya and East Africa.</p>
-      </div>
-      <div class="product-card">
-        <h3>Turkeys</h3>
-        <p>Available for breeding and meat production. We offer both local and improved varieties.</p>
-      </div>
-      <div class="product-card">
-        <h3>Geese</h3>
-        <p>Unique ornamental birds, highly sought for breeding, resale, and traditional dishes.</p>
-      </div>
-      <div class="product-card">
-        <h3>Fresh Farm Produce</h3>
-        <p>Organic vegetables and fruits including tomatoes, sukuma wiki, bananas, and more.</p>
-      </div>
-      <div class="product-card">
-        <h3>Maize and Beans</h3>
-        <p>Grown using eco-friendly techniques. We offer bulk delivery to schools, markets, and homes.</p>
-      </div>
-      <div class="product-card">
-        <h3>Agro-inputs (Coming Soon)</h3>
-        <p>We will soon stock certified seeds, organic manure, and modern irrigation tools.</p>
-      </div>
-      <div class="product-card">
-        <h3>Export-Grade Herbs</h3>
-        <p>Specialty herbs like rosemary and basil grown organically for niche markets.</p>
-      </div>
+    </section><section class="product-category">
+  <h2>ICT Products</h2>
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="images/webdesign.jpg" alt="Web Design Tools">
+      <h3>Web Design Kits</h3>
+      <p>Complete HTML & CSS starter kits and components for your digital projects.</p>
+    </div>
+    <div class="product-card">
+      <img src="images/software.jpg" alt="Software Tools">
+      <h3>Software Tools</h3>
+      <p>Curated open-source software for farmers and agribusinesses.</p>
+    </div>
+    <div class="product-card">
+      <img src="images/ebooks.jpg" alt="E-books and Guides">
+      <h3>Agri-Tech Ebooks</h3>
+      <p>Digital resources covering farming technologies, ICT integration, and agribusiness.</p>
     </div>
   </div>
+</section>
 
-  <footer>
-    <p>&copy; 2025 Odiems Limited. All rights reserved.</p>
+  </main>  <footer>
+    <div class="container">
+      <p>&copy; 2025 Odiems Limited. All rights reserved.</p>
+      <p>Contact: <a href="tel:+254795179287">0795 179 287</a></p>
+    </div>
   </footer>
 </body>
 </html>
