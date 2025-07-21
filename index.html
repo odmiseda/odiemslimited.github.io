@@ -3,149 +3,99 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Odiems Limited - Empowering Agriculture</title>
+  <meta name="description" content="Odiems Limited is a leading agricultural and tech firm offering quality products, information, and services." />
+  <title>Odiems Limited | Home</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
   <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f3f3f3;
-      color: #222;
-    }
-    header {
-      background: url('https://images.unsplash.com/photo-1576086213369-97a306d36512?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
-      color: white;
-      padding: 100px 20px;
-      text-align: center;
-    }
-    header h1 {
-      font-size: 3em;
-      margin: 0;
-    }
-    header p {
-      font-size: 1.5em;
-      margin: 15px 0 30px;
-    }
-    .btn {
-      background: #006400;
-      color: white;
-      padding: 12px 25px;
-      margin: 10px;
-      border: none;
-      border-radius: 5px;
-      font-size: 1em;
-      text-decoration: none;
-      transition: background 0.3s;
-    }
-    .btn:hover {
-      background: #228b22;
-    }
-    main {
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-    .section {
-      margin-bottom: 40px;
-    }
-    .section h2 {
-      color: #006400;
-      margin-bottom: 10px;
-    }
-    footer {
-      background: #004225;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-    .cta-links {
-      margin-top: 20px;
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Roboto', sans-serif; line-height: 1.6; background: #f4f4f4; color: #333; }
+    header, footer { background: #006400; color: #fff; padding: 1em 2em; text-align: center; }
+    nav { display: flex; justify-content: center; background: #004d00; }
+    nav a { color: #fff; padding: 1em; text-decoration: none; display: inline-block; }
+    nav a:hover { background: #003300; }
+    .container { padding: 2em; }
+    .hero { background: url('https://via.placeholder.com/1200x400?text=Odiems+Limited+Farming') no-repeat center center/cover; height: 300px; display: flex; align-items: center; justify-content: center; color: white; font-size: 2em; font-weight: bold; }
+    .features { display: flex; flex-wrap: wrap; gap: 1em; justify-content: center; margin-top: 2em; }
+    .feature-box { background: #fff; padding: 1em; border-radius: 8px; width: 300px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    .adsense-placeholder, .mailchimp-placeholder { background: #ddd; padding: 1em; margin: 2em 0; text-align: center; border: 2px dashed #aaa; }
+    footer p { margin: 0.5em 0; }
+    @media(max-width: 768px) {
+      nav { flex-direction: column; }
+      .features { flex-direction: column; align-items: center; }
     }
   </style>
 </head>
 <body>
-<!-- Universal Navigation Bar -->
-<nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="products.html">Products</a>
-  <a href="services.html">Services</a>
-  <a href="contact.html">Contact</a>
-  <a href="blog.html">Blog</a>
-  <a href="privacy.html">Privacy</a>
-  <a href="terms.html">Terms</a>
-</nav>
 
   <header>
     <h1>Odiems Limited</h1>
-    <p>Empowering Agriculture with Innovation & Opportunity</p>
-    <div class="cta-links">
-      <a href="products.html" class="btn">Explore Products</a>
-      <a href="blog.html" class="btn">Read Our Blog</a>
-      <a href="contact.html" class="btn">Contact Us</a>
-    </div>
+    <p>Innovation in Agriculture & Technology</p>
   </header>
 
-  <main>
-    <section class="section">
-      <h2>Welcome to Odiems Limited</h2>
-      <p>
-        We are a Kenyan-based agribusiness company passionate about mixed farming, agri-tech, and rural transformation. 
-        From high-quality poultry and ornamental birds to innovative agri-financing and farming consultancy, we help farmers thrive.
-      </p>
-    </section>
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="products.html">Products</a>
+    <a href="services.html">Services</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
-    <section class="section">
-      <h2>Our Offerings</h2>
-      <ul>
-        <li>✅ Poultry & Ornamental Birds</li>
-        <li>✅ Farming Inputs & Tools</li>
-        <li>✅ Shylock Loans (30% return in 2 weeks)</li>
-        <li>✅ Agribusiness Consultancy & Training</li>
-      </ul>
-    </section>
+  <!-- Hero Section -->
+  <div class="hero">
+    Empowering Farmers with Innovation
+  </div>
 
-    <section class="section">
-      <h2>Join Our Vision</h2>
-      <p>
-        <!-- Google AdSense Placeholder -->
-<div style="margin: 30px auto; max-width: 728px; text-align: center; border: 1px dashed #ccc; padding: 20px;">
-  <strong>AdSense Ad Slot</strong><br>
-  <em>This is where your ad will appear once AdSense is approved.</em>
-</div>
+  <div class="container">
 
-        Our goal is to be East Africa’s most trusted platform for sustainable agricultural growth by 2030.
-        Join us on this journey — whether you're a farmer, investor, or agri-enthusiast, there's a place for you here.
-      </p>
-      <a href="about.html" class="btn">Learn More About Us</a>
-    </section>
-  </main>
+    <!-- News Ticker -->
+    <div style="background: #ffcc00; color: #000; padding: 10px; text-align: center; font-weight: bold;">
+      📢 New product launch this August – Stay tuned for updates!
+    </div>
+
+    <!-- Features -->
+    <div class="features">
+      <div class="feature-box">
+        <h3>Smart Farming</h3>
+        <p>We provide modern solutions to boost your farm's productivity.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Quality Products</h3>
+        <p>Access our wide range of certified agricultural products.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Tech Insights</h3>
+        <p>Follow our blog to learn how technology is changing farming.</p>
+      </div>
+    </div>
+
+    <!-- AdSense Placeholder -->
+    <div class="adsense-placeholder">
+      [ Google AdSense Placeholder ]
+    </div>
+
+    <!-- Mailchimp Form -->
+    <div class="mailchimp-placeholder">
+      <form action="https://YOUR_MAILCHIMP_URL" method="POST" target="_blank">
+        <label for="email">Subscribe to Our Newsletter:</label><br><br>
+        <input type="email" name="EMAIL" placeholder="Enter your email" required style="padding: 0.5em; width: 60%;">
+        <br><br>
+        <button type="submit" style="padding: 0.5em 1em; background: #006400; color: white; border: none;">Subscribe</button>
+      </form>
+    </div>
+
+  </div>
 
   <footer>
-    <p>&copy; 2025 Odiems Limited. All Rights Reserved. | <a href="privacy.html" style="color:#aaffaa;">Privacy Policy</a></p>
+    <p>&copy; 2025 Odiems Limited. All rights reserved.</p>
+    <p><a href="privacy.html" style="color:#fff;">Privacy Policy</a> | <a href="terms.html" style="color:#fff;">Terms</a></p>
   </footer>
-<!-- WhatsApp Chat Button -->
-<a href="https://wa.me/254795179287" 
-   style="position:fixed; bottom:20px; right:20px; background:#25D366; color:white; padding:12px 15px; 
-          border-radius:50px; text-decoration:none; font-weight:bold; box-shadow:0 4px 8px rgba(0,0,0,0.3);">
-  💬 Chat with Us
-</a>
-<!-- Mailchimp Signup -->
-<div style="background:#f4f4f4; padding:20px; text-align:center;">
-  <h2>Subscribe to Our Newsletter</h2>
-  <form action="https://yourlist.usX.list-manage.com/subscribe/post?u=xxx&amp;id=yyy" method="post" target="_blank">
-    <input type="email" name="EMAIL" placeholder="Enter your email" required style="padding:10px;">
-    <button type="submit" style="padding:10px 15px;">Subscribe</button>
-  </form>
-</div>
-<!-- Announcement Ticker -->
-<div style="background: #ffcc00; color: #000; padding: 10px; text-align: center; font-weight: bold;">
-  🚨 Latest Update: New poultry training session starts August 10th — Register Now!
-</div>
-<marquee behavior="scroll" direction="left" style="background: #004225; color: #fff; padding: 10px;">
-  📣 Shylock services available | Poultry advisory now open | Farm inputs restocked | Training on 10th August 🚜
-</marquee>
 
 </body>
 </html>
