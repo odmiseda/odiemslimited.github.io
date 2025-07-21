@@ -1,83 +1,15 @@
+<!-- contact.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Get in touch with Odiems Limited for inquiries, partnerships, and customer support.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact Us | Odiems Limited</title>
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      background-color: #f0f6ff;
-      color: #333;
-    }
-    header, footer {
-      background-color: #004080;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-    }
-    .container {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 20px;
-      background: #fff;
-      border-radius: 8px;
-    }
-    h1, h2 {
-      color: #004080;
-    }
-    .contact-details {
-      margin-bottom: 30px;
-    }
-    .contact-details p {
-      margin: 10px 0;
-    }
-    .form-group {
-      margin-bottom: 15px;
-    }
-    label {
-      font-weight: bold;
-      display: block;
-      margin-bottom: 5px;
-    }
-    input, textarea {
-      width: 100%;
-      padding: 12px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-    }
-    button {
-      background-color: #007bff;
-      color: white;
-      padding: 12px 25px;
-      border: none;
-      border-radius: 6px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: #0056b3;
-    }
-    iframe {
-      width: 100%;
-      height: 300px;
-      margin-top: 30px;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
-    <h1>Odiems Limited</h1>
+    <h1>Contact Odiems Limited</h1>
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
@@ -88,40 +20,27 @@
     </nav>
   </header>
 
-  <div class="container">
-    <h2>Contact Us</h2>
-    <div class="contact-details">
-      <p><strong>Phone:</strong> +254 712 345 678</p>
-      <p><strong>Email:</strong> info@odiemslimited.com</p>
-      <p><strong>Location:</strong> Muhoroni, Kisumu County, Kenya</p>
-    </div>
+  <main>
+    <section class="contact-info">
+      <h2>Get in Touch</h2>
+      <p>Phone: <a href="tel:+254795179287">+254 795 179 287</a></p>
+      <p>Email: <a href="mailto:info@odiemslimited.com">info@odiemslimited.com</a></p>
+      <p>Location: Kenya (Serving Local & International Clients)</p>
+    </section>
 
-    <form action="https://formspree.io/f/your-form-id" method="POST">
-      <div class="form-group">
+    <section class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form action="https://formspree.io/f/mwkglblj" method="POST">
         <label for="name">Your Name:</label>
-        <input type="text" id="name" name="name" required />
-      </div>
-      <div class="form-group">
+        <input type="text" name="name" id="name" required />
+
         <label for="email">Your Email:</label>
-        <input type="email" id="email" name="_replyto" required />
-      </div>
-      <div class="form-group">
+        <input type="email" name="email" id="email" required />
+
         <label for="message">Your Message:</label>
-        <textarea id="message" name="message" rows="6" required></textarea>
-      </div>
-      <button type="submit">Send Message</button>
-    </form>
+        <textarea name="message" id="message" rows="6" required></textarea>
 
-    <!-- Optional Google Map Embed -->
-    <iframe
-      src="https://www.google.com/maps?q=Muhoroni%2C+Kenya&output=embed"
-      allowfullscreen=""
-      loading="lazy"
-    ></iframe>
-  </div>
-
-  <footer>
-    <p>&copy; 2025 Odiems Limited. All rights reserved.</p>
-  </footer>
-</body>
-</html>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
