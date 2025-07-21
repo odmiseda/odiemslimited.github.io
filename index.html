@@ -1,117 +1,77 @@
-<!DOCTYPE html><html lang="en">
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Odiems Limited | Agriculture and Technology for a Sustainable Future in Kenya and Beyond">
-  <meta name="keywords" content="Odiems Limited, agriculture, agri-tech, farming, technology, Kenya, East Africa, sustainable farming, agribusiness">
+  <meta name="description" content="Odiems Limited - Agriculture, Innovation & Sustainability">
+  <meta name="keywords" content="Agriculture, AgriTech, Kenya, Odiems, Farming, Sustainable Agriculture">
   <meta name="author" content="Odiems Limited">
-  <title>Odiems Limited | Agriculture Meets Technology</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f5f5f5;
-      color: #333;
-    }
-    header {
-      background-color: #005c2e;
-      color: white;
-      padding: 20px 0;
-      text-align: center;
-    }
-    nav {
-      background: #003f20;
-      padding: 10px;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .hero {
-      background: url('hero-image.jpg') center center/cover no-repeat;
-      height: 400px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      text-shadow: 2px 2px 4px #000;
-    }
-    .hero h1 {
-      font-size: 3em;
-      max-width: 80%;
-      text-align: center;
-    }
-    .section {
-      max-width: 1200px;
-      margin: 40px auto;
-      padding: 20px;
-      background: white;
-      border-radius: 8px;
-    }
-    .section h2 {
-      color: #005c2e;
-    }
-    .footer {
-      background: #003f20;
-      color: white;
-      text-align: center;
-      padding: 20px 0;
-    }
-    .cta {
-      background-color: #007e3a;
-      color: white;
-      padding: 15px;
-      text-align: center;
-      margin-top: 30px;
-      border-radius: 5px;
-    }
-    .cta a {
-      color: white;
-      text-decoration: underline;
-    }
-  </style>
+  <title>Odiems Limited | Agriculture & Innovation</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
-    <h1>Odiems Limited</h1>
-    <p>Agriculture & Technology for a Sustainable Future</p>
+    <div class="top-bar">
+      <p>Contact us: 0795179287 | Email: info@odiems.com</p>
+    </div>
+    <nav>
+      <div class="logo">Odiems Limited</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
   </header>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="products.html">Products</a>
-    <a href="services.html">Services</a>
-    <a href="contact.html">Contact</a>
-    <li><a href="https://odiemsltd.blogspot.com/?m=1" target="_blank">Blog</a></li>
-  </nav>
+
   <section class="hero">
-    <h1>Empowering African Farmers Through Innovation</h1>
+    <h1>Welcome to Odiems Limited</h1>
+    <p>Empowering Agriculture through Innovation and Technology</p>
+    <a href="#newsletter" class="btn-primary">Subscribe for Updates</a>
   </section>
-  <section class="section">
-    <h2>Who We Are</h2>
-    <p>Odiems Limited is a Kenyan-based company dedicated to transforming agriculture through technology. We provide smart farming solutions, market access for farmers, and a platform for knowledge sharing globally.</p>
+
+  <section class="features">
+    <div class="feature">
+      <h3>Sustainable Farming</h3>
+      <p>We promote eco-friendly and profitable farming methods for all.</p>
+    </div>
+    <div class="feature">
+      <h3>Smart AgriTech</h3>
+      <p>From IoT to AI, we empower farmers with smart digital tools.</p>
+    </div>
+    <div class="feature">
+      <h3>Market Access</h3>
+      <p>Connect farmers with buyers locally and globally through Odiems.</p>
+    </div>
   </section>
-  <section class="section">
-    <h2>What We Do</h2>
-    <ul>
-      <li>Smart agri-tech solutions</li>
-      <li>Online marketing and e-commerce for agricultural products</li>
-      <li>Farmer education and digital content</li>
-      <li>Livestock and ornamental bird rearing</li>
-    </ul>
+
+  <section class="callout">
+    <h2>Join our Agricultural Revolution</h2>
+    <p>We're transforming farming in Africa, one innovation at a time.</p>
+    <a href="about.html" class="btn-secondary">Learn More</a>
   </section>
-  <section class="cta">
-    <p>Want to partner or sell with us? <a href="contact.html">Get in touch today!</a></p>
+
+  <section id="newsletter" class="newsletter">
+    <h2>📬 Subscribe to our Newsletter</h2>
+    <form action="https://your-mailchimp-post-url" method="POST" target="_blank">
+      <input type="email" name="EMAIL" placeholder="Enter your email" required />
+      <button type="submit">Subscribe</button>
+    </form>
   </section>
-  <footer class="footer">
+
+  <section class="blog-preview">
+    <h2>📖 Our Blog</h2>
+    <p>Read insights, tips, and news from our Blogger page.</p>
+    <a href="https://odiemsltd.blogspot.com/?m=1" class="btn-primary" target="_blank">Visit Blog</a>
+  </section>
+
+  <footer>
     <p>&copy; 2025 Odiems Limited. All rights reserved.</p>
+    <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms & Conditions</a></p>
   </footer>
 </body>
 </html>
