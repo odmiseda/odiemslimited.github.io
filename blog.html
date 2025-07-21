@@ -1,18 +1,57 @@
-<!-- blog.html: Redirects to official Blogger blog --><!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Odiems Limited Blog - Agricultural Insights, Technology & Innovation">
-  <title>Blog | Odiems Limited</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Explore insightful blog posts from Odiems Limited on agriculture, technology, entrepreneurship and more."/>
+  <meta name="keywords" content="Odiems blog, agriculture blog Kenya, tech blog, business tips"/>
+  <meta name="author" content="Odiems Limited"/>
+  <title>Odiems Blog | Insights & Updates</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>Redirecting to Odiems Blog...</h1>
-    <p>If you are not redirected, <a href="https://odiemsltd.blogspot.com/?m=1">click here to visit our blog</a>.</p>
-  </div>
-  <script>
-    window.location.href = "https://odiemsltd.blogspot.com/?m=1";
-  </script>
+  <header>
+    <nav class="navbar">
+      <div class="container">
+        <a href="index.html" class="logo">Odiems Limited</a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="blog.html" class="active">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="blog-page">
+    <section class="hero">
+      <div class="container">
+        <h1>📚 Odiems Blog</h1>
+        <p>Latest articles, insights, and innovations in agriculture, tech, and entrepreneurship.</p>
+      </div>
+    </section>
+
+    <section class="blog-embed container">
+      <iframe 
+        src="https://odiemsltd.blogspot.com/?m=1" 
+        title="Odiems Blogger Feed"
+        width="100%" 
+        height="1200px" 
+        style="border:none; overflow:auto;">
+      </iframe>
+      <p style="text-align: center; margin-top: 15px;">
+        View directly on Blogger: <a href="https://odiemsltd.blogspot.com/?m=1" target="_blank">Visit Blog</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Odiems Limited. All Rights Reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
