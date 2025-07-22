@@ -1,47 +1,69 @@
-<!-- contact.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact Us | Odiems Limited</title>
+  <meta name="description" content="Explore the latest agricultural insights, tech innovations, and expert commentary on the Odiems Limited blog.">
+  <meta name="keywords" content="Odiems Limited, Agriculture Blog, Tech Blog, Farming News, Agricultural Innovations, Kenya Agribusiness, Smart Farming">
+  <meta name="author" content="Odiems Limited" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <title>Blog | Odiems Limited</title>
 </head>
 <body>
   <header>
-    <h1>Contact Odiems Limited</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="products.html">Products</a>
-      <a href="services.html">Services</a>
-      <a href="blog.html">Blog</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <div class="navbar">
+      <a href="index.html" class="logo"><img src="logo.png" alt="Odiems Logo" /></a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="blog.html" class="active">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <section class="contact-info">
-      <h2>Get in Touch</h2>
-      <p>Phone: <a href="tel:+254795179287">+254 795 179 287</a></p>
-      <p>Email: <a href="mailto:info@odiemslimited.com">info@odiemslimited.com</a></p>
-      <p>Location: Kenya (Serving Local & International Clients)</p>
+    <section class="hero">
+      <h1>Our Blog</h1>
+      <p>Get expert tips, industry news, and insights on agriculture, agribusiness, and innovation.</p>
     </section>
 
-    <section class="contact-form">
-      <h2>Send Us a Message</h2>
-      <form action="https://formspree.io/f/mwkglblj" method="POST">
-        <label for="name">Your Name:</label>
-        <input type="text" name="name" id="name" required />
+    <section class="blog-container">
+      <iframe src="https://odiemsltd.blogspot.com/?m=1" title="Odiems Blog" frameborder="0" width="100%" height="1800px" style="border: none;"></iframe>
+    </section>
 
-        <label for="email">Your Email:</label>
-        <input type="email" name="email" id="email" required />
-
-        <label for="message">Your Message:</label>
-        <textarea name="message" id="message" rows="6" required></textarea>
-
-        <button type="submit">Send Message</button>
+    <section class="newsletter">
+      <h2>Subscribe to Our Newsletter</h2>
+      <form action="https://YOUR-MAILCHIMP-ACTION-URL" method="post" target="_blank">
+        <input type="email" name="EMAIL" placeholder="Enter your email" required />
+        <button type="submit">Subscribe</button>
       </form>
     </section>
   </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Odiems Limited. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a> |
+        <a href="terms.html">Terms & Conditions</a> |
+        <a href="sitemap.xml">Sitemap</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LF549YFVQ8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-LF549YFVQ8');
+  </script>
+</body>
+</html>
