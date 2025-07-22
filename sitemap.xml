@@ -1,55 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
-  <!-- Homepage -->
+
   <url>
     <loc>https://www.odiemslimited.com/</loc>
-    <priority>1.0</priority>
-    <changefreq>daily</changefreq>
+    <lastmod>2025-07-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.00</priority>
   </url>
 
-  <!-- Internal Pages -->
   <url>
     <loc>https://www.odiemslimited.com/about.html</loc>
-    <priority>0.8</priority>
+    <lastmod>2025-07-21</lastmod>
     <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://www.odiemslimited.com/products.html</loc>
-    <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://www.odiemslimited.com/services.html</loc>
-    <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://www.odiemslimited.com/contact.html</loc>
-    <priority>0.6</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://www.odiemslimited.com/blog.html</loc>
-    <priority>0.7</priority>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://www.odiemslimited.com/privacy.html</loc>
-    <priority>0.4</priority>
-    <changefreq>yearly</changefreq>
-  </url>
-  <url>
-    <loc>https://www.odiemslimited.com/terms.html</loc>
-    <priority>0.4</priority>
-    <changefreq>yearly</changefreq>
+    <priority>0.80</priority>
   </url>
 
-  <!-- External Blog Sitemap -->
+  <url>
+    <loc>https://www.odiemslimited.com/blog.html</loc>
+    <lastmod>2025-07-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
   <url>
     <loc>https://odiemsltd.blogspot.com/</loc>
-    <priority>0.7</priority>
+    <lastmod>2025-07-21</lastmod>
     <changefreq>daily</changefreq>
+    <priority>0.70</priority>
   </url>
 
 </urlset>
