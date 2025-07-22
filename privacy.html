@@ -1,116 +1,66 @@
+<!-- privacy.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Privacy Policy | Odiems Limited</title>
-  <meta name="description" content="Odiems Limited privacy policy outlines how we collect, use, and protect your personal data.">
   <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
   <header>
-    <div class="container">
-      <nav>
-        <h1>Odiems Limited</h1>
-        <ul>
+    <nav class="navbar">
+      <div class="container">
+        <a href="index.html" class="logo">Odiems Limited</a>
+        <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="products.html">Products</a></li>
           <li><a href="services.html">Services</a></li>
-          <li><a href="blog.html">Blog</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
-      </nav>
-    </div>
+      </div>
+    </nav>
   </header>
 
-  <main>
-    <section class="page-header">
-      <div class="container">
-        <h2>Privacy Policy</h2>
-        <p>Your privacy matters. Here’s how we protect and handle your information.</p>
-        <!-- Google AdSense -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-xxxxxxxxxxxxxxxx"
-     data-ad-slot="1234567890"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+  <main class="container">
+    <h1>Privacy Policy</h1>
+    <p>At Odiems Limited, we respect your privacy and are committed to protecting your personal data. This privacy policy outlines how we collect, use, and protect your information when you visit our website.</p>
 
-      </div>
-    </section>
+    <h2>What Data We Collect</h2>
+    <ul>
+      <li>Personal information such as your name, email address, and phone number.</li>
+      <li>Technical data such as IP address, browser type, and device information.</li>
+      <li>Usage data, including how you interact with our site and services.</li>
+    </ul>
 
-    <section class="container">
-      <article class="page-content">
-        <h3>1. Introduction</h3>
-        <p>Odiems Limited values your privacy and is committed to protecting your personal data. This privacy policy describes how we collect, use, and safeguard the information you provide when visiting our website.</p>
+    <h2>How We Use Your Information</h2>
+    <ul>
+      <li>To provide and manage our services and website.</li>
+      <li>To respond to inquiries and customer service requests.</li>
+      <li>To send newsletters and promotional content (if subscribed).</li>
+    </ul>
 
-        <h3>2. Information We Collect</h3>
-        <ul>
-          <li>Personal identification information (name, email address, phone number, etc.) when you fill out forms.</li>
-          <li>Non-personal data such as browser type, device used, pages visited, and time spent on our site.</li>
-        </ul>
+    <h2>Data Protection</h2>
+    <p>We implement appropriate technical and organizational measures to protect your data against unauthorized access, misuse, or loss.</p>
 
-        <h3>3. How We Use Your Data</h3>
-        <ul>
-          <li>To improve user experience and our website offerings.</li>
-          <li>To respond to inquiries, send updates, and deliver requested information or services.</li>
-          <li>To send promotional or marketing content (only if you consent).</li>
-        </ul>
+    <h2>Your Rights</h2>
+    <p>You have the right to access, correct, or delete your personal data. Contact us via our <a href="contact.html">contact page</a> for any privacy-related requests.</p>
 
-        <h3>4. Data Protection</h3>
-        <p>We implement standard security protocols to protect your personal data from unauthorized access or disclosure. However, no digital transmission is completely secure.</p>
+    <h2>Cookies</h2>
+    <p>We use cookies to enhance user experience. By using our site, you consent to the use of cookies.</p>
 
-        <h3>5. Sharing Information</h3>
-        <p>We do not sell or share your personal data with third parties except to comply with legal obligations or if you explicitly consent.</p>
-
-        <h3>6. Cookies</h3>
-        <p>We use cookies to personalize your experience, track website performance, and analyze user behavior. You can disable cookies through your browser settings.</p>
-
-        <h3>7. Your Rights</h3>
-        <ul>
-          <li>Access, correct, or delete your personal data.</li>
-          <li>Withdraw consent to marketing communications.</li>
-        </ul>
-
-        <h3>8. Third-Party Links</h3>
-        <p>Our website may contain links to external sites. We are not responsible for their privacy practices or content.</p>
-
-        <h3>9. Updates to This Policy</h3>
-        <p>We may update this policy occasionally. Changes will be posted on this page with a revised "Last Updated" date.</p>
-
-        <h3>10. Contact Us</h3>
-        <p>If you have any questions or concerns about this privacy policy, please email us at <a href="mailto:info@odiemslimited.com">info@odiemslimited.com</a>.</p>
-
-        <p><strong>Last Updated:</strong> July 21, 2025</p>
-        <!-- Google AdSense -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-xxxxxxxxxxxxxxxx"
-     data-ad-slot="1234567890"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
-      </article>
-    </section>
+    <h2>Changes to This Policy</h2>
+    <p>We may update this privacy policy from time to time. Check this page for the latest updates.</p>
   </main>
 
   <footer>
     <div class="container">
-      <p>&copy; 2025 Odiems Limited. All rights reserved.</p>
-      <nav class="footer-nav">
-        <a href="privacy.html" class="active">Privacy Policy</a>
-        <a href="terms.html">Terms & Conditions</a>
-        <a href="sitemap.xml">Sitemap</a>
-      </nav>
+      <p>&copy; <span id="year"></span> Odiems Limited. All rights reserved.</p>
     </div>
   </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
