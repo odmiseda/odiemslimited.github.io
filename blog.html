@@ -2,107 +2,73 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Our Blog | Odiems Limited</title>
-  <meta name="description" content="Explore the latest updates, agriculture news, and insights from Odiems Limited. Stay informed and inspired.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Odiems Limited - Blog</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
-  <header>
+  <header class="site-header">
     <div class="container">
+      <h1>Odiems Limited</h1>
       <nav>
-        <h1>Odiems Limited</h1>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="blog.html" class="active">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+        <a href="blog.html" class="active">Blog</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="page-header">
+    <section class="page-intro">
       <div class="container">
-        <h2>Our Blog</h2>
-        <p>Fresh insights, farming innovations, and updates from Odiems Limited.</p>
-        <!-- Google AdSense -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-xxxxxxxxxxxxxxxx"
-     data-ad-slot="1234567890"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
+        <h2>Odiems Blog</h2>
+        <p>Latest insights, farming updates, and tech strategies from our team.</p>
       </div>
     </section>
 
     <section class="blog-feed">
       <div class="container">
-        <div id="blog-posts">Loading posts...</div>
+        <div id="blog-posts">
+          <p>Loading blog posts...</p>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer>
+  <footer class="site-footer">
     <div class="container">
       <p>&copy; 2025 Odiems Limited. All rights reserved.</p>
-      <nav class="footer-nav">
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="terms.html">Terms & Conditions</a>
-        <a href="sitemap.xml">Sitemap</a>
-      </nav>
     </div>
   </footer>
 
   <script>
-    // Automatically load Blogger RSS Feed
-    const blogFeedUrl = "https://odiemsltd.blogspot.com/feeds/posts/default?alt=json";
-
-    fetch(blogFeedUrl)
+    const bloggerURL = "https://odiemsltd.blogspot.com/feeds/posts/default?alt=json";
+    fetch(bloggerURL)
       .then(response => response.json())
       .then(data => {
-        const postsContainer = document.getElementById("blog-posts");
-        postsContainer.innerHTML = "";
-
-        const entries = data.feed.entry || [];
-        entries.slice(0, 6).forEach(entry => {
-          const title = entry.title.$t;
-          const content = entry.content.$t;
-          const link = entry.link.find(l => l.rel === "alternate").href;
-          const published = new Date(entry.published.$t).toLocaleDateString();
-
-          const postEl = document.createElement("div");
-          postEl.innerHTML = `
-            <h3><a href="${link}" target="_blank" rel="noopener noreferrer">${title}</a></h3>
-            <small>Published: ${published}</small>
-            <p>${content.substring(0, 200)}...</p>
-            <a class="btn" href="${link}" target="_blank">Read More</a>
+        const posts = data.feed.entry || [];
+        let html = "";
+        posts.slice(0, 5).forEach(post => {
+          const title = post.title.$t;
+          const link = post.link.find(l => l.rel === "alternate").href;
+          const content = post.content?.$t || "";
+          const excerpt = content.replace(/<[^>]+>/g, '').substring(0, 150) + "...";
+          html += `
+            <div class="blog-card">
+              <h3><a href="${link}" target="_blank">${title}</a></h3>
+              <p>${excerpt}</p>
+              <a class="read-more" href="${link}" target="_blank">Read more</a>
+            </div>
           `;
-          postsContainer.appendChild(postEl);
         });
+        document.getElementById("blog-posts").innerHTML = html;
       })
-      .catch(error => {
-        document.getElementById("blog-posts").innerHTML = "<p>Unable to load blog posts at this time.</p>";
-        console.error("Blog feed error:", error);
+      .catch(() => {
+        document.getElementById("blog-posts").innerHTML = "<p>Unable to load blog posts at the moment.</p>";
       });
   </script>
-  <section class="newsletter">
-  <div class="container">
-    <h2>Subscribe to Our Newsletter</h2>
-    <form action="https://YOUR-USERNAME.usX.list-manage.com/subscribe/post?u=YOUR_U_ID&amp;id=YOUR_LIST_ID" method="post" target="_blank" novalidate>
-      <input type="email" name="EMAIL" placeholder="Enter your email" required>
-      <button type="submit">Subscribe</button>
-    </form>
-  </div>
-</section>
-
 </body>
 </html>
