@@ -65,5 +65,42 @@
     gtag('js', new Date());
     gtag('config', 'G-LF549YFVQ8');
   </script>
+  <section class="blog-feed">
+  <h2>Latest Blog Posts</h2>
+  <div id="blog-posts" class="grid gap-6 md:grid-cols-2 lg:grid-cols-3"></div>
+</section>
+
+<script>
+  fetch("https://odiemsltd.blogspot.com/feeds/posts/default?alt=json")
+    .then(response => response.json())
+    .then(data => {
+      const container = document.getElementById("blog-posts");
+      const entries = data.feed.entry || [];
+
+      entries.slice(0, 6).forEach(entry => {
+        const title = entry.title.$t;
+        const content = entry.content.$t;
+        const link = entry.link.find(l => l.rel === "alternate").href;
+        const published = new Date(entry.published.$t).toLocaleDateString();
+
+        const preview = content.replace(/<[^>]*>/g, "").substring(0, 150) + "...";
+
+        const postHTML = `
+          <div class="p-4 border rounded shadow bg-white">
+            <h3 class="text-xl font-semibold mb-2">${title}</h3>
+            <p class="text-sm text-gray-600 mb-2">${published}</p>
+            <p class="text-base text-gray-800 mb-3">${preview}</p>
+            <a href="${link}" class="text-blue-500 hover:underline" target="_blank">Read More</a>
+          </div>
+        `;
+        container.innerHTML += postHTML;
+      });
+    })
+    .catch(error => {
+      document.getElementById("blog-posts").innerHTML = "<p>Failed to load blog posts.</p>";
+      console.error("Blogger Feed Error:", error);
+    });
+</script>
+
 </body>
 </html>
