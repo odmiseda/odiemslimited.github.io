@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore a wide range of agricultural and tech-based products by Odiems Limited, built to serve farmers and innovators across Kenya and beyond." />
   <title>Our Products | Odiems Limited</title>
-  <meta name="description" content="Explore agricultural and technological products offered by Odiems Limited to support modern farmers and agribusinesses.">
   <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
 </head>
 
 <body>
   <header>
     <div class="container">
+      <a href="index.html" class="logo">Odiems Limited</a>
       <nav>
-        <h1>Odiems Limited</h1>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
@@ -25,85 +27,54 @@
     </div>
   </header>
 
-  <main>
+  <main class="container">
     <section class="page-header">
-      <div class="container">
-        <h2>Our Products</h2>
-        <p>Empowering farmers with sustainable, innovative, and practical agricultural solutions.</p>
-      </div>
+      <h1>Our Products</h1>
+      <p>Explore our range of innovative agricultural and tech solutions.</p>
     </section>
 
-    <section class="products-list">
-      <div class="container">
-        <div class="product-item">
-          <h3>Hybrid Poultry & Ornamental Birds</h3>
-          <p>We breed and supply high-quality chickens, turkeys, guinea fowls, and ornamental geese suitable for both commercial and hobby farming.</p>
-       <!-- Google AdSense -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-xxxxxxxxxxxxxxxx"
-     data-ad-slot="1234567890"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+    <section class="products-grid">
+      <article class="product-card">
+        <img src="images/organic-feed.jpg" alt="Organic Chicken Feed">
+        <h3>Organic Chicken Feed</h3>
+        <p>Nutritious, chemical-free feed for healthy poultry. Formulated for better egg production and weight gain.</p>
+      </article>
 
-        </div>
+      <article class="product-card">
+        <img src="images/irrigation-kit.jpg" alt="Smart Irrigation Kit">
+        <h3>Smart Irrigation Kit</h3>
+        <p>Automated and water-efficient irrigation system suitable for both small-scale and commercial farms.</p>
+      </article>
 
-        <div class="product-item">
-          <h3>Farm Inputs & Accessories</h3>
-          <p>Get affordable seeds, feeds, vaccines, organic fertilizers, and farming tools. Our products are sourced from trusted suppliers and tailored to different agro-zones in Kenya.</p>
-        </div>
+      <article class="product-card">
+        <img src="images/poultry-incubator.jpg" alt="Poultry Egg Incubator">
+        <h3>Digital Poultry Incubator</h3>
+        <p>Energy-saving incubator for hatching eggs with accurate temperature and humidity control.</p>
+      </article>
 
-        <div class="product-item">
-          <h3>ICT-Enabled Smart Farm Kits</h3>
-          <p>These are plug-and-play agricultural kits bundled with IoT sensors, mobile app access, solar units, and data dashboards for precision farming and remote monitoring.</p>
-        </div>
+      <article class="product-card">
+        <img src="images/soil-kit.jpg" alt="Soil Testing Kit">
+        <h3>Soil Testing Kit</h3>
+        <p>Easy-to-use kit for determining pH and nutrient levels, enabling smart fertilizer usage.</p>
+      </article>
+    </section>
 
-        <div class="product-item">
-          <h3>Agri-Financing Packages</h3>
-          <p>Through our shylock lending system, we offer short-term loan products to vetted farmers and clients with flexible repayment and access to capital for agribusiness expansion.</p>
-        </div>
-
-        <div class="product-item">
-          <h3>Value-Added Processed Goods</h3>
-          <p>We are launching locally processed agricultural products such as dried fruits, poultry meat cuts, organic herbs, and animal feeds—all branded under Odiems Limited.</p>
-        </div>
-
-        <div class="product-item">
-          <h3>Digital Learning Materials</h3>
-          <p>Purchase guides, eBooks, training videos, and agricultural templates directly from our website to empower your journey in modern farming.</p>
-        </div>
-
-        <div class="call-to-action">
-          <p>Interested in buying or reselling our products? Let’s talk.</p>
-          <!-- Google AdSense -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-xxxxxxxxxxxxxxxx"
-     data-ad-slot="1234567890"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
-          <a href="contact.html" class="btn">Contact Sales</a>
-        </div>
-      </div>
+    <section class="cta">
+      <h2>Need custom products or bulk orders?</h2>
+      <p>Reach out to us directly and we’ll help you find a solution.</p>
+      <a href="contact.html" class="btn">Contact Sales</a>
     </section>
   </main>
 
   <footer>
     <div class="container">
-      <p>&copy; 2025 Odiems Limited. All rights reserved.</p>
-      <nav class="footer-nav">
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="terms.html">Terms & Conditions</a>
-        <a href="sitemap.xml">Sitemap</a>
-      </nav>
+      <p>&copy; <span id="year"></span> Odiems Limited. All rights reserved.</p>
     </div>
   </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
+
 </html>
