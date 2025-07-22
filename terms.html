@@ -1,45 +1,96 @@
-
-<!-- terms.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Read the Terms and Conditions for using Odiems Limited's website and services.">
+  <meta name="keywords" content="Terms and Conditions, Odiems Limited, User Agreement, Website Use">
+  <meta name="author" content="Odiems Limited" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <title>Terms and Conditions | Odiems Limited</title>
-  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <h1>Terms and Conditions</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="products.html">Products</a>
-      <a href="services.html">Services</a>
-      <a href="blog.html">Blog</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <div class="navbar">
+      <a href="index.html" class="logo"><img src="logo.png" alt="Odiems Logo" /></a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
+
   <main>
-    <section>
-      <h2>Terms of Use</h2>
-      <p>By accessing our website, you agree to be bound by these terms and all applicable laws.</p>
+    <section class="hero">
+      <h1>Terms and Conditions</h1>
+      <p>Welcome to Odiems Limited! By accessing our site, you agree to these terms.</p>
+    </section>
 
-      <h3>Website Usage</h3>
-      <p>You agree not to misuse the site, engage in unlawful activities, or harm the site's performance.</p>
+    <section class="content-section">
+      <h2>1. Acceptance of Terms</h2>
+      <p>By accessing or using our website (www.odiemslimited.com), you agree to be bound by these Terms and Conditions and all applicable laws and regulations. If you do not agree, please do not use this site.</p>
 
-      <h3>Intellectual Property</h3>
-      <p>All content on this website is owned by Odiems Limited. You may not reproduce or distribute without permission.</p>
+      <h2>2. Use License</h2>
+      <p>Permission is granted to temporarily download one copy of the materials for personal, non-commercial transitory viewing only. This is not a transfer of title, and under this license you may not:</p>
+      <ul>
+        <li>Modify or copy the materials</li>
+        <li>Use the materials for any commercial purpose</li>
+        <li>Attempt to decompile or reverse engineer any software on the site</li>
+        <li>Remove any copyright or proprietary notations</li>
+      </ul>
 
-      <h3>Limitation of Liability</h3>
-      <p>We are not liable for any damages arising from use of this site or reliance on its content.</p>
+      <h2>3. Disclaimer</h2>
+      <p>All content on this website is provided "as is". Odiems Limited makes no warranties, expressed or implied, and disclaims all other warranties including merchantability or fitness for a particular purpose.</p>
 
-      <h3>Changes to Terms</h3>
-      <p>Odiems Limited reserves the right to update these terms. Continued use of the site implies acceptance of the latest version.</p>
+      <h2>4. Limitations</h2>
+      <p>In no event shall Odiems Limited or its suppliers be liable for any damages arising from the use or inability to use the materials on our site.</p>
+
+      <h2>5. Accuracy of Content</h2>
+      <p>We strive to keep all content accurate and up-to-date. However, we do not warrant that any materials on the website are accurate, complete, or current.</p>
+
+      <h2>6. Links</h2>
+      <p>Odiems Limited has not reviewed all linked sites and is not responsible for their contents. The inclusion of any link does not imply endorsement.</p>
+
+      <h2>7. Modifications</h2>
+      <p>We may revise these terms at any time without notice. By using the site, you agree to be bound by the current version of these Terms and Conditions.</p>
+
+      <h2>8. Governing Law</h2>
+      <p>These terms are governed by and construed in accordance with the laws of Kenya, and you irrevocably submit to the jurisdiction of the courts located in Nairobi, Kenya.</p>
+
+      <h2>9. Contact</h2>
+      <p>If you have any questions about these Terms and Conditions, you may contact us at:<br />
+      <strong>Email:</strong> legal@odiemslimited.com<br />
+      <strong>Phone:</strong> +254 712 345678</p>
+
+      <p><em>Last updated: July 21, 2025</em></p>
     </section>
   </main>
+
   <footer>
-    <p>&copy; 2025 Odiems Limited. All rights reserved.</p>
+    <div class="footer-content">
+      <p>&copy; 2025 Odiems Limited. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a> |
+        <a href="terms.html" class="active">Terms & Conditions</a> |
+        <a href="sitemap.xml">Sitemap</a>
+      </div>
+    </div>
   </footer>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LF549YFVQ8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-LF549YFVQ8');
+  </script>
 </body>
 </html>
