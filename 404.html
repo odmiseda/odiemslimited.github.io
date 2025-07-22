@@ -2,72 +2,50 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="404 Page Not Found - Odiems Limited">
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>404 - Page Not Found | Odiems Limited</title>
-  <style>
-    body {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      text-align: center;
-      background: #f2f2f2;
-      font-family: Arial, sans-serif;
-    }
-    .error-container {
-      max-width: 600px;
-      background: #fff;
-      padding: 40px;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
-    }
-    .error-container h1 {
-      font-size: 5rem;
-      margin-bottom: 0.5rem;
-      color: #e63946;
-    }
-    .error-container h2 {
-      margin-bottom: 1rem;
-      font-size: 1.5rem;
-      color: #333;
-    }
-    .error-container p {
-      color: #555;
-    }
-    .error-container a {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 10px 20px;
-      background: #0a7c56;
-      color: #fff;
-      border-radius: 5px;
-      text-decoration: none;
-      transition: background 0.3s;
-    }
-    .error-container a:hover {
-      background: #055f3c;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="error-container">
-    <h1>404</h1>
-    <h2>Oops! Page Not Found</h2>
-    <p>The page you’re looking for doesn’t exist or may have been moved.</p>
-    <a href="index.html">Back to Homepage</a>
-  </div>
 
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LF549YFVQ8"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-LF549YFVQ8');
-  </script>
+  <header>
+    <div class="container">
+      <nav>
+        <h1>Odiems Limited</h1>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-header">
+      <h2>404 - Page Not Found</h2>
+      <p>Sorry, the page you're looking for doesn't exist or has been moved.</p>
+    </section>
+
+    <section class="page-content" style="text-align: center;">
+      <p>Oops! We can't seem to find the page you are looking for.</p>
+      <p><a href="index.html" style="color: #003366; font-weight: bold;">← Back to Home</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Odiems Limited. All rights reserved.</p>
+      <div class="footer-nav">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>
