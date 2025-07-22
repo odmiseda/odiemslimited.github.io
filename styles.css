@@ -1,4 +1,6 @@
-/* Reset & base styles */
+/* styles.css for Odiems Limited */
+
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -7,201 +9,182 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 16px;
   line-height: 1.6;
+  background-color: #f9f9f9;
   color: #333;
-  background: #f8f9fa;
 }
 
-/* Container */
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
-  padding: 1rem 0;
-}
-
-/* Header & Navigation */
+/* Navbar */
 header {
-  background-color: #003366;
+  background-color: #0c4b33;
   color: #fff;
-  padding: 1rem 0;
+  padding: 20px 0;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-nav h1 {
+nav .logo {
   font-size: 1.8rem;
-  color: #fff;
+  font-weight: bold;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
+  gap: 20px;
 }
 
 nav ul li a {
   color: #fff;
   text-decoration: none;
-  padding: 0.5rem 1rem;
-  transition: background 0.3s;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
-nav ul li a:hover,
-nav ul li a.active {
-  background: #00509e;
-  border-radius: 4px;
+nav ul li a:hover {
+  color: #ffce00;
 }
 
-/* Page Headers */
-.page-header {
-  background: #e3f2fd;
-  padding: 2rem 0;
-  margin-bottom: 1rem;
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(to right, #0c4b33, #188152);
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.hero .btn {
+  padding: 10px 25px;
+  background-color: #ffce00;
+  color: #0c4b33;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/* Features */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.feature {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+}
+
+.feature h2 {
+  color: #0c4b33;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+/* Blog Section */
+.blog-preview {
+  padding: 60px 20px;
+  text-align: center;
+  background: #eefaf3;
+}
+
+.blog-preview h2 {
+  margin-bottom: 30px;
+  color: #0c4b33;
+  font-size: 2rem;
+}
+
+.blog-frame {
+  width: 100%;
+  height: 500px;
+  border: none;
+}
+
+/* Newsletter */
+.newsletter {
+  padding: 60px 20px;
+  background: #0c4b33;
+  color: #fff;
   text-align: center;
 }
 
-.page-header h2 {
-  font-size: 2rem;
-  color: #003366;
-}
-
-.page-header p {
-  color: #555;
-}
-
-/* Main Content */
-.page-content {
-  background: #fff;
-  padding: 2rem;
-  border-radius: 0.5rem;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-}
-
-.page-content h3 {
-  margin-top: 1.5rem;
-  color: #003366;
-}
-
-.page-content p,
-.page-content ul {
-  margin-top: 0.5rem;
-}
-
-.page-content ul {
-  padding-left: 1.2rem;
-  list-style-type: disc;
-}
-
-/* Contact Form */
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-form input,
-form textarea {
-  padding: 0.75rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 1rem;
-  resize: vertical;
-}
-
-form button {
-  background: #003366;
-  color: #fff;
-  padding: 0.75rem;
+.newsletter input[type="email"] {
+  padding: 10px;
+  width: 250px;
+  margin-right: 10px;
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
+}
+
+.newsletter input[type="submit"] {
+  padding: 10px 20px;
+  background: #ffce00;
+  color: #0c4b33;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
-  transition: background 0.3s;
-}
-
-form button:hover {
-  background: #00509e;
-}
-
-/* Blog Feed */
-#blog-posts {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
-}
-
-#blog-posts > div {
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 0.5rem;
-  padding: 1rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 /* Footer */
 footer {
-  background: #003366;
-  color: #fff;
-  padding: 2rem 0;
-  margin-top: 2rem;
-}
-
-footer p {
+  background: #333;
+  color: #ccc;
+  padding: 20px;
   text-align: center;
-  margin-bottom: 0.5rem;
-}
-
-.footer-nav {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.footer-nav a {
-  color: #fff;
-  text-decoration: none;
   font-size: 0.9rem;
 }
 
-.footer-nav a:hover {
-  text-decoration: underline;
+footer a {
+  color: #ffce00;
+  text-decoration: none;
 }
 
-.blog-feed {
-  padding: 2rem;
-  background: #f9f9f9;
-}
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
 
-#blog-posts {
-  display: grid;
-  gap: 1.5rem;
-}
+  .hero h1 {
+    font-size: 2.5rem;
+  }
 
-.blog-card {
-  background: #fff;
-  border-radius: 8px;
-  padding: 1rem;
-  border: 1px solid #e0e0e0;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
-}
+  .newsletter input[type="email"] {
+    width: 100%;
+    margin-bottom: 10px;
+  }
 
-.blog-card h3 {
-  margin-top: 0;
-  color: #00704a;
+  .newsletter input[type="submit"] {
+    width: 100%;
+  }
 }
-
-.blog-card .read-more {
-  display: inline-block;
-  margin-top: 0.5rem;
-  color: #00704a;
-  text-decoration: underline;
-}
-
