@@ -1,74 +1,45 @@
+<!-- blog.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Odiems Limited - Blog</title>
+  <title>Odiems Limited | Blog</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <h1>Odiems Limited</h1>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="products.html">Products</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
-        <a href="blog.html" class="active">Blog</a>
-      </nav>
-    </div>
+  <header>
+    <nav class="navbar">
+      <div class="container">
+        <a href="index.html" class="logo">Odiems Limited</a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="blog.html" class="active">Blog</a></li>
+        </ul>
+      </div>
+    </nav>
   </header>
 
-  <main>
-    <section class="page-intro">
-      <div class="container">
-        <h2>Odiems Blog</h2>
-        <p>Latest insights, farming updates, and tech strategies from our team.</p>
-      </div>
-    </section>
-
-    <section class="blog-feed">
-      <div class="container">
-        <div id="blog-posts">
-          <p>Loading blog posts...</p>
-        </div>
-      </div>
-    </section>
+  <main class="container">
+    <h1>Latest Articles</h1>
+    <div id="blog-posts">
+      <!-- Auto-pulled Blogger feed -->
+      <iframe src="https://odiemsltd.blogspot.com" width="100%" height="800" frameborder="0"></iframe>
+    </div>
   </main>
 
-  <footer class="site-footer">
+  <footer>
     <div class="container">
-      <p>&copy; 2025 Odiems Limited. All rights reserved.</p>
+      <p>&copy; <span id="year"></span> Odiems Limited. All rights reserved.</p>
     </div>
   </footer>
 
   <script>
-    const bloggerURL = "https://odiemsltd.blogspot.com/feeds/posts/default?alt=json";
-    fetch(bloggerURL)
-      .then(response => response.json())
-      .then(data => {
-        const posts = data.feed.entry || [];
-        let html = "";
-        posts.slice(0, 5).forEach(post => {
-          const title = post.title.$t;
-          const link = post.link.find(l => l.rel === "alternate").href;
-          const content = post.content?.$t || "";
-          const excerpt = content.replace(/<[^>]+>/g, '').substring(0, 150) + "...";
-          html += `
-            <div class="blog-card">
-              <h3><a href="${link}" target="_blank">${title}</a></h3>
-              <p>${excerpt}</p>
-              <a class="read-more" href="${link}" target="_blank">Read more</a>
-            </div>
-          `;
-        });
-        document.getElementById("blog-posts").innerHTML = html;
-      })
-      .catch(() => {
-        document.getElementById("blog-posts").innerHTML = "<p>Unable to load blog posts at the moment.</p>";
-      });
+    document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
