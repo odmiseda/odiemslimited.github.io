@@ -1,190 +1,113 @@
-/* styles.css for Odiems Limited */
+/* Updated styles.css to match clean professional layout */
 
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+:root {
+  --primary-color: #0d6efd;
+  --secondary-color: #6c757d;
+  --background-color: #f8f9fa;
+  --text-color: #212529;
+  --light-gray: #dee2e6;
+  --white: #ffffff;
+  --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
   line-height: 1.6;
-  background-color: #f9f9f9;
-  color: #333;
 }
 
-/* Navbar */
-header {
-  background-color: #0c4b33;
-  color: #fff;
-  padding: 20px 0;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+.container {
+  max-width: 1140px;
+  margin: auto;
+  padding: 1rem;
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-nav .logo {
-  font-size: 1.8rem;
-  font-weight: bold;
+header, footer {
+  background: var(--white);
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 1rem;
+  padding: 0;
 }
 
-nav ul li a {
-  color: #fff;
+nav a {
   text-decoration: none;
-  font-weight: 500;
+  color: var(--text-color);
   transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
-  color: #ffce00;
+nav a:hover {
+  color: var(--primary-color);
 }
 
-/* Hero Section */
 .hero {
+  background: var(--primary-color);
+  color: var(--white);
+  padding: 3rem 1rem;
   text-align: center;
-  padding: 80px 20px;
-  background: linear-gradient(to right, #0c4b33, #188152);
-  color: #fff;
+  border-radius: 0.5rem;
 }
 
 .hero h1 {
-  font-size: 3rem;
-  margin-bottom: 20px;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .hero p {
   font-size: 1.2rem;
-  margin-bottom: 30px;
+  margin-top: 0;
 }
 
-.hero .btn {
-  padding: 10px 25px;
-  background-color: #ffce00;
-  color: #0c4b33;
-  border: none;
-  font-size: 1rem;
-  cursor: pointer;
-  border-radius: 5px;
-  text-decoration: none;
-}
-
-/* Features */
-.features {
+.card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-  padding: 60px 20px;
-  max-width: 1200px;
-  margin: auto;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
 }
 
-.feature {
-  background: #fff;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+.card {
+  background: var(--white);
+  border: 1px solid var(--light-gray);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease;
 }
 
-.feature:hover {
+.card:hover {
   transform: translateY(-5px);
 }
 
-.feature h2 {
-  color: #0c4b33;
-  margin-bottom: 15px;
-  font-size: 1.5rem;
+.card h3 {
+  margin-top: 0;
 }
 
-/* Blog Section */
-.blog-preview {
-  padding: 60px 20px;
-  text-align: center;
-  background: #eefaf3;
+.btn {
+  display: inline-block;
+  background: var(--primary-color);
+  color: var(--white);
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 0.25rem;
+  transition: background 0.3s ease;
 }
 
-.blog-preview h2 {
-  margin-bottom: 30px;
-  color: #0c4b33;
-  font-size: 2rem;
+.btn:hover {
+  background: #0b5ed7;
 }
 
-.blog-frame {
-  width: 100%;
-  height: 500px;
-  border: none;
-}
-
-/* Newsletter */
-.newsletter {
-  padding: 60px 20px;
-  background: #0c4b33;
-  color: #fff;
-  text-align: center;
-}
-
-.newsletter input[type="email"] {
-  padding: 10px;
-  width: 250px;
-  margin-right: 10px;
-  border: none;
-  border-radius: 5px;
-}
-
-.newsletter input[type="submit"] {
-  padding: 10px 20px;
-  background: #ffce00;
-  color: #0c4b33;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-/* Footer */
 footer {
-  background: #333;
-  color: #ccc;
-  padding: 20px;
   text-align: center;
   font-size: 0.9rem;
-}
-
-footer a {
-  color: #ffce00;
-  text-decoration: none;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .hero h1 {
-    font-size: 2.5rem;
-  }
-
-  .newsletter input[type="email"] {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-
-  .newsletter input[type="submit"] {
-    width: 100%;
-  }
+  margin-top: 2rem;
+  border-top: 1px solid var(--light-gray);
+  padding-top: 1rem;
 }
