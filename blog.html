@@ -2,20 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Explore insightful blog posts from Odiems Limited on agriculture, technology, entrepreneurship and more."/>
-  <meta name="keywords" content="Odiems blog, agriculture blog Kenya, tech blog, business tips"/>
-  <meta name="author" content="Odiems Limited"/>
-  <title>Odiems Blog | Insights & Updates</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore the latest agricultural insights, tech innovations, and expert commentary on the Odiems Limited blog.">
+  <meta name="keywords" content="Odiems Limited, Agriculture Blog, Tech Blog, Farming News, Agricultural Innovations, Kenya Agribusiness, Smart Farming">
+  <meta name="author" content="Odiems Limited" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <title>Blog | Odiems Limited</title>
 </head>
 <body>
   <header>
-    <nav class="navbar">
-      <div class="container">
-        <a href="index.html" class="logo">Odiems Limited</a>
-        <ul class="nav-links">
+    <div class="navbar">
+      <a href="index.html" class="logo"><img src="logo.png" alt="Odiems Logo" /></a>
+      <nav>
+        <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="products.html">Products</a></li>
@@ -23,36 +23,47 @@
           <li><a href="blog.html" class="active">Blog</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
-      </div>
-    </nav>
+      </nav>
+    </div>
   </header>
 
-  <main class="blog-page">
+  <main>
     <section class="hero">
-      <div class="container">
-        <h1>📚 Odiems Blog</h1>
-        <p>Latest articles, insights, and innovations in agriculture, tech, and entrepreneurship.</p>
-      </div>
+      <h1>Our Blog</h1>
+      <p>Get expert tips, industry news, and insights on agriculture, agribusiness, and innovation.</p>
     </section>
 
-    <section class="blog-embed container">
-      <iframe 
-        src="https://odiemsltd.blogspot.com/?m=1" 
-        title="Odiems Blogger Feed"
-        width="100%" 
-        height="1200px" 
-        style="border:none; overflow:auto;">
-      </iframe>
-      <p style="text-align: center; margin-top: 15px;">
-        View directly on Blogger: <a href="https://odiemsltd.blogspot.com/?m=1" target="_blank">Visit Blog</a>
-      </p>
+    <section class="blog-container">
+      <iframe src="https://odiemsltd.blogspot.com/?m=1" title="Odiems Blog" frameborder="0" width="100%" height="1800px" style="border: none;"></iframe>
+    </section>
+
+    <section class="newsletter">
+      <h2>Subscribe to Our Newsletter</h2>
+      <form action="https://YOUR-MAILCHIMP-ACTION-URL" method="post" target="_blank">
+        <input type="email" name="EMAIL" placeholder="Enter your email" required />
+        <button type="submit">Subscribe</button>
+      </form>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2025 Odiems Limited. All Rights Reserved.</p>
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Odiems Limited. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a> |
+        <a href="terms.html">Terms & Conditions</a> |
+        <a href="sitemap.xml">Sitemap</a>
+      </div>
     </div>
   </footer>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LF549YFVQ8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-LF549YFVQ8');
+  </script>
 </body>
 </html>
