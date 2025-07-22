@@ -2,19 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Reach out to Odiems Limited for inquiries, partnerships, or customer support. We are here to help you grow.">
-  <meta name="keywords" content="Contact Odiems, Odiems Limited, Agricultural support Kenya, Tech solutions, Agribusiness support, Contact farmers Kenya">
-  <meta name="author" content="Odiems Limited" />
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contact Us | Odiems Limited</title>
+  <meta name="description" content="Contact Odiems Limited for inquiries, consultations, partnerships, and feedback. We're here to help grow your agribusiness.">
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
   <header>
-    <div class="navbar">
-      <a href="index.html" class="logo"><img src="logo.png" alt="Odiems Logo" /></a>
+    <div class="container">
       <nav>
+        <h1>Odiems Limited</h1>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
@@ -28,52 +26,65 @@
   </header>
 
   <main>
-    <section class="hero">
-      <h1>Contact Us</h1>
-      <p>We'd love to hear from you! Whether you're looking to partner, inquire, or get support, our team is ready to assist.</p>
+    <section class="page-header">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <p>We’d love to hear from you. Whether you have a question, need help, or want to partner with us—get in touch today.</p>
+      </div>
     </section>
 
-    <section class="contact-section">
-      <div class="contact-info">
-        <h2>Get in Touch</h2>
-        <p><strong>Phone:</strong> +254 712 345678</p>
-        <p><strong>Email:</strong> info@odiemslimited.com</p>
-        <p><strong>Address:</strong> Muhoroni, Kisumu County, Kenya</p>
-        <p><strong>Working Hours:</strong> Mon–Fri, 8:00am – 5:00pm</p>
-      </div>
+    <section class="contact-form-section">
+      <div class="container">
+        <div class="contact-grid">
 
-      <div class="contact-form">
-        <h2>Send Us a Message</h2>
-        <form action="https://formspree.io/f/your-form-id" method="POST">
-          <input type="text" name="name" placeholder="Your Name" required />
-          <input type="email" name="email" placeholder="Your Email" required />
-          <input type="text" name="subject" placeholder="Subject" required />
-          <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
-          <button type="submit">Send Message</button>
-        </form>
-        <p class="form-note">* We'll respond within 24 hours.</p>
+          <div class="contact-form">
+            <form action="https://formspree.io/f/mnqedojl" method="POST">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" required>
+
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required>
+
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required>
+
+              <label for="message">Your Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+
+              <button type="submit" class="btn">Send Message</button>
+            </form>
+          </div>
+
+          <div class="contact-details">
+            <h3>Head Office</h3>
+            <p>Muhoroni, Kisumu County, Kenya</p>
+            <p><strong>Phone:</strong> +254 712 XXX XXX</p>
+            <p><strong>Email:</strong> info@odiemslimited.com</p>
+            <p><strong>Working Hours:</strong><br> Mon – Fri: 8:00am – 5:00pm</p>
+
+            <h4>Follow Us</h4>
+            <ul class="social-links">
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">LinkedIn</a></li>
+              <li><a href="#">YouTube</a></li>
+            </ul>
+          </div>
+
+        </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <div class="footer-content">
+    <div class="container">
       <p>&copy; 2025 Odiems Limited. All rights reserved.</p>
-      <div class="footer-links">
-        <a href="privacy.html">Privacy Policy</a> |
-        <a href="terms.html">Terms & Conditions</a> |
+      <nav class="footer-nav">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms & Conditions</a>
         <a href="sitemap.xml">Sitemap</a>
-      </div>
+      </nav>
     </div>
   </footer>
-
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LF549YFVQ8"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-LF549YFVQ8');
-  </script>
 </body>
 </html>
