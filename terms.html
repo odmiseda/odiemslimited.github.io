@@ -1,117 +1,58 @@
+<!-- terms.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Read the Terms and Conditions for using Odiems Limited's website and services.">
-  <meta name="keywords" content="Terms and Conditions, Odiems Limited, User Agreement, Website Use">
-  <meta name="author" content="Odiems Limited" />
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <title>Terms and Conditions | Odiems Limited</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
-    <div class="navbar">
-     
-      <nav>
-        <ul>
+    <nav class="navbar">
+      <div class="container">
+        <a href="index.html" class="logo">Odiems Limited</a>
+        <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="products.html">Products</a></li>
           <li><a href="services.html">Services</a></li>
-          <li><a href="blog.html">Blog</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
-      </nav>
-    </div>
+      </div>
+    </nav>
   </header>
 
-  <main>
-    <section class="hero">
-      <h1>Terms and Conditions</h1>
-      <p>Welcome to Odiems Limited! By accessing our site, you agree to these terms.</p>
-    </section>
+  <main class="container">
+    <h1>Terms and Conditions</h1>
+    <p>Welcome to Odiems Limited. By accessing and using our website, you agree to comply with the following terms and conditions.</p>
 
-    <section class="content-section">
-      <h2>1. Acceptance of Terms</h2>
-      <p>By accessing or using our website (www.odiemslimited.com), you agree to be bound by these Terms and Conditions and all applicable laws and regulations. If you do not agree, please do not use this site.</p>
-<!-- Google AdSense -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-xxxxxxxxxxxxxxxx"
-     data-ad-slot="1234567890"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+    <h2>Use of Site</h2>
+    <ul>
+      <li>You agree to use this website only for lawful purposes.</li>
+      <li>Unauthorized use of this website may give rise to a claim for damages and/or be a criminal offense.</li>
+    </ul>
 
-      <h2>2. Use License</h2>
-      <p>Permission is granted to temporarily download one copy of the materials for personal, non-commercial transitory viewing only. This is not a transfer of title, and under this license you may not:</p>
-      <ul>
-        <li>Modify or copy the materials</li>
-        <li>Use the materials for any commercial purpose</li>
-        <li>Attempt to decompile or reverse engineer any software on the site</li>
-        <li>Remove any copyright or proprietary notations</li>
-      </ul>
+    <h2>Intellectual Property</h2>
+    <p>All content, design, layout, and graphics on this site are the property of Odiems Limited unless otherwise stated.</p>
 
-      <h2>3. Disclaimer</h2>
-      <p>All content on this website is provided "as is". Odiems Limited makes no warranties, expressed or implied, and disclaims all other warranties including merchantability or fitness for a particular purpose.</p>
+    <h2>Liability</h2>
+    <p>We do not guarantee the accuracy or completeness of information on this site. Use the content at your own risk.</p>
 
-      <h2>4. Limitations</h2>
-      <p>In no event shall Odiems Limited or its suppliers be liable for any damages arising from the use or inability to use the materials on our site.</p>
+    <h2>Links to Other Sites</h2>
+    <p>Our website may contain links to other websites. We are not responsible for the content or privacy practices of those sites.</p>
 
-      <h2>5. Accuracy of Content</h2>
-      <p>We strive to keep all content accurate and up-to-date. However, we do not warrant that any materials on the website are accurate, complete, or current.</p>
-
-      <h2>6. Links</h2>
-      <p>Odiems Limited has not reviewed all linked sites and is not responsible for their contents. The inclusion of any link does not imply endorsement.</p>
-
-      <h2>7. Modifications</h2>
-      <p>We may revise these terms at any time without notice. By using the site, you agree to be bound by the current version of these Terms and Conditions.</p>
-
-      <h2>8. Governing Law</h2>
-      <p>These terms are governed by and construed in accordance with the laws of Kenya, and you irrevocably submit to the jurisdiction of the courts located in Nairobi, Kenya.</p>
-
-      <h2>9. Contact</h2>
-      <p>If you have any questions about these Terms and Conditions, you may contact us at:<br />
-        <!-- Google AdSense -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-xxxxxxxxxxxxxxxx"
-     data-ad-slot="1234567890"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
-      <strong>Email:</strong> legal@odiemslimited.com<br />
-      <strong>Phone:</strong> +254 712 345678</p>
-
-      <p><em>Last updated: July 21, 2025</em></p>
-    </section>
+    <h2>Changes</h2>
+    <p>We may change these terms at any time. Continued use of the site constitutes acceptance of those changes.</p>
   </main>
 
   <footer>
-    <div class="footer-content">
-      <p>&copy; 2025 Odiems Limited. All rights reserved.</p>
-      <div class="footer-links">
-        <a href="privacy.html">Privacy Policy</a> |
-        <a href="terms.html" class="active">Terms & Conditions</a> |
-        <a href="sitemap.xml">Sitemap</a>
-      </div>
+    <div class="container">
+      <p>&copy; <span id="year"></span> Odiems Limited. All rights reserved.</p>
     </div>
   </footer>
-
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LF549YFVQ8"></script>
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-LF549YFVQ8');
+    document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
