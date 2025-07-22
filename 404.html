@@ -3,69 +3,75 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>404 - Page Not Found | Odiems Limited</title>
+  <title>404 Not Found | Odiems Limited</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="favicon.ico" />
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      flex-direction: column;
+      min-height: 100vh;
+      background: linear-gradient(to right, #e0f7fa, #ffffff);
+      color: #333;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      padding: 1rem;
+    }
+
+    h1 {
+      font-size: 6rem;
+      color: #00695c;
+      margin: 0;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: #00796b;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      color: #555;
+    }
+
+    a {
+      padding: 0.8rem 1.5rem;
+      background-color: #00695c;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    a:hover {
+      background-color: #004d40;
+    }
+
+    img {
+      max-width: 400px;
+      margin-bottom: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 4rem;
+      }
+      img {
+        max-width: 100%;
+      }
+    }
+  </style>
 </head>
 <body>
-
-  <header>
-    <div class="container">
-      <nav>
-        <h1>Odiems Limited</h1>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <main class="container">
-    <section class="page-header">
-      <h2>404 - Page Not Found</h2>
-      <p>Sorry, the page you're looking for doesn't exist or has been moved.</p>
-    </section>
-
-    <section class="page-content" style="text-align: center;">
-      <p>Oops! We can't seem to find the page you are looking for.</p>
-      <!-- Google AdSense -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-xxxxxxxxxxxxxxxx"
-     data-ad-slot="1234567890"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
-      <p><a href="index.html" style="color: #003366; font-weight: bold;">← Back to Home</a></p>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Odiems Limited. All rights reserved.</p>
-      <div class="footer-nav">
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="terms.html">Terms of Service</a>
-        <a href="contact.html">Contact</a>
-      </div>
-    </div>
-  </footer>
-<section class="newsletter">
-  <div class="container">
-    <h2>Subscribe to Our Newsletter</h2>
-    <form action="https://YOUR-USERNAME.usX.list-manage.com/subscribe/post?u=YOUR_U_ID&amp;id=YOUR_LIST_ID" method="post" target="_blank" novalidate>
-      <input type="email" name="EMAIL" placeholder="Enter your email" required>
-      <button type="submit">Subscribe</button>
-    </form>
-  </div>
-</section>
-
+  <img src="https://cdn-icons-png.flaticon.com/512/2748/2748558.png" alt="Page Not Found Icon" />
+  <h1>404</h1>
+  <h2>Oops! Page not found</h2>
+  <p>The page you’re looking for doesn’t exist or has been moved.</p>
+  <a href="index.html">Go Back to Homepage</a>
 </body>
 </html>
