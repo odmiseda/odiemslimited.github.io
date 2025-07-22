@@ -1,5 +1,4 @@
 User-agent: *
-Disallow: /404.html
-Allow: /
+Disallow:
 
 Sitemap: https://www.odiemslimited.com/sitemap.xml
