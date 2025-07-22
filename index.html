@@ -1,81 +1,93 @@
-<!-- index.html: Homepage for Odiems Limited -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Odiems Limited - Agricultural and Technological Solutions in Kenya and Beyond" />
-  <meta name="keywords" content="Agriculture, Technology, Kenya, Farming, ICT, Innovation, Odiems Limited" />
+  <meta name="description" content="Odiems Limited - Driving Agricultural Innovation and Digital Solutions in Kenya and Beyond." />
+  <meta name="keywords" content="Odiems Limited, Agriculture, Kenya, ICT, AgriTech, Farming" />
   <meta name="author" content="Odiems Limited" />
-  <title>Odiems Limited | Smart Agriculture & Tech Solutions</title>
   <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+  <title>Odiems Limited | Empowering Agriculture Through Technology</title>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LF549YFVQ8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-LF549YFVQ8');
+  </script>
 </head>
+
 <body>
-  <header class="site-header">
-    <div class="container">
-      <div class="branding">
-        <h1><a href="index.html">Odiems Limited</a></h1>
-        <p>Smart Agriculture & Tech Solutions</p>
-      </div>
-      <nav class="site-nav">
-        <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+  <header>
+    <nav>
+      <img src="assets/logo.png" alt="Odiems Limited Logo" class="logo" />
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
   <section class="hero">
-    <div class="container">
-      <h2>Transforming Agriculture Through Innovation</h2>
-      <p>We provide sustainable farming and smart tech solutions for modern agribusiness in Kenya and globally.</p>
-      <a href="contact.html" class="btn">Get in Touch</a>
-    </div>
+    <h1>Welcome to Odiems Limited</h1>
+    <p>Empowering Farmers with Technology, Information, and Innovation</p>
+    <a href="services.html" class="btn-primary">Explore Our Services</a>
   </section>
 
-  <section class="features">
-    <div class="container">
-      <div class="feature">
-        <img src="images/smart-farm.jpg" alt="Smart Farming" />
-        <h3>Smart Farming</h3>
-        <p>Adopt data-driven, tech-enabled farming methods that boost productivity and resilience.</p>
-      </div>
-      <div class="feature">
-        <img src="images/export-produce.jpg" alt="Export-Ready Produce" />
-        <h3>Export-Ready Produce</h3>
-        <p>We grow and aggregate top-quality produce ready for both local and international markets.</p>
-      </div>
-      <div class="feature">
-        <img src="images/consulting.jpg" alt="AgriTech Consulting" />
-        <h3>AgriTech Consulting</h3>
-        <p>Access expert advice and project support for agribusiness ventures, ICT in farming, and sustainability.</p>
-      </div>
-    </div>
+  <section class="overview">
+    <h2>Who We Are</h2>
+    <p>
+      Odiems Limited is a registered Kenyan company championing smart agriculture and tech-driven solutions for farmers, agribusinesses, and cooperatives. With a strong foundation in mixed farming and IT integration, our aim is to bridge the digital divide in rural communities. From poultry and ornamental bird farming to agritech consultancy, our services are designed to empower, educate, and enrich.
+    </p>
   </section>
 
-  <section class="newsletter">
-    <div class="container">
-      <h2>Subscribe for Updates</h2>
-      <p>Join our mailing list for agricultural tips, news, and investment opportunities.</p>
-      <!-- Mailchimp embedded form -->
-      <form action="https://YOUR_MAILCHIMP_URL" method="post" target="_blank" novalidate>
-        <input type="email" name="EMAIL" placeholder="Your Email Address" required>
-        <button type="submit">Subscribe</button>
-      </form>
-    </div>
+  <section class="services-preview">
+    <h2>What We Offer</h2>
+    <ul>
+      <li><strong>Smart Farming:</strong> Modern methods for poultry, turkey, guineafowl & crops.</li>
+      <li><strong>Digital Training:</strong> ICT support and tools for rural agribusiness owners.</li>
+      <li><strong>Shylock Services:</strong> Safe, ethical credit for our trusted clients.</li>
+    </ul>
+    <a href="services.html" class="btn-secondary">See All Services</a>
   </section>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; 2025 Odiems Limited | All Rights Reserved</p>
-      <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms & Conditions</a></p>
-      <p>Call Us: <a href="tel:+254795179287">+254 795 179 287</a></p>
+  <section class="products-preview">
+    <h2>Our Products</h2>
+    <p>
+      We supply healthy birds, organic feeds, tech guides, and equipment for smallholder farmers. Odiems Limited guarantees quality, traceability, and support for every product we sell.
+    </p>
+    <a href="products.html" class="btn-secondary">View Products</a>
+  </section>
+
+  <section class="blog-preview">
+    <h2>From Our Blog</h2>
+    <p>Visit our blog for updates, success stories, market trends, and farming guides.</p>
+    <a href="https://odiemsltd.blogspot.com/" target="_blank" class="btn-primary">Go to Blog</a>
+  </section>
+
+  <section class="subscription">
+    <h2>Subscribe to Our Newsletter</h2>
+    <form action="https://YOUR-MAILCHIMP-FORM-ACTION" method="post" target="_blank">
+      <input type="email" name="EMAIL" placeholder="Enter your email" required />
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Odiems Limited. All rights reserved.</p>
+      <ul class="footer-links">
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms & Conditions</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </div>
   </footer>
 </body>
