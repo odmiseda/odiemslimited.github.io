@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Terms & Conditions | Odiems Limited</title>
-  <meta name="description" content="Read the terms and conditions that govern your use of Odiems Limited's website and services.">
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Odiems Limited - Agriculture & Technology Solutions">
+  <meta name="keywords" content="Odiems, Agriculture, Technology, Kenya, Farming, Innovation, AgriTech">
+  <meta name="author" content="Odiems Limited">
+  <title>Welcome to Odiems Limited</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header>
     <div class="container">
+      <img src="logo.png" alt="Odiems Logo" class="logo">
       <nav>
-        <h1>Odiems Limited</h1>
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" class="active">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="products.html">Products</a></li>
           <li><a href="services.html">Services</a></li>
@@ -26,100 +32,77 @@
   </header>
 
   <main>
-    <section class="page-header">
+    <section class="hero">
       <div class="container">
-        <h2>Terms and Conditions</h2>
-        <p>By accessing this website, you agree to these terms. Please read them carefully.</p>
+        <h1>Empowering Agriculture & Technology in Africa</h1>
+        <p>Welcome to Odiems Limited. Your trusted partner in agribusiness, technology, and innovation for a sustainable future.</p>
+        <a href="about.html" class="btn">Learn More</a>
       </div>
     </section>
 
-    <section class="container">
-      <article class="page-content">
-        <h3>1. Acceptance of Terms</h3>
-        <p>By accessing or using Odiems Limited’s website, you agree to be bound by these Terms and Conditions and our Privacy Policy. If you do not agree, please do not use our website.</p>
-<!-- Google AdSense -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-xxxxxxxxxxxxxxxx"
-     data-ad-slot="1234567890"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+    <section class="features">
+      <div class="container grid">
+        <div class="card">
+          <h2>Smart Agriculture</h2>
+          <p>We bring modern techniques to farms, increasing productivity and reducing costs.</p>
+        </div>
+        <div class="card">
+          <h2>Tech Solutions</h2>
+          <p>Automation, data analytics, and digital tools tailored for rural and urban markets.</p>
+        </div>
+        <div class="card">
+          <h2>Business Advisory</h2>
+          <p>Our team provides strategy, investment, and market guidance to agripreneurs.</p>
+        </div>
+      </div>
+    </section>
 
-        <h3>2. Use of Website</h3>
-        <ul>
-          <li>You agree to use this site for lawful purposes only.</li>
-          <li>You may not use the website in any way that could damage it or impair access for other users.</li>
-          <li>Content on this site is for informational purposes only and is subject to change without notice.</li>
-        </ul>
+    <section class="blog-preview">
+      <div class="container">
+        <h2>Latest from Our Blog</h2>
+        <iframe src="https://odiemsltd.blogspot.com" style="width:100%; height:400px; border:none;"></iframe>
+        <a href="blog.html" class="btn">Read More Posts</a>
+      </div>
+    </section>
 
-        <h3>3. Intellectual Property</h3>
-        <p>All content including text, images, graphics, and code is the property of Odiems Limited or its licensors. Unauthorized use is strictly prohibited.</p>
-
-        <h3>4. Limitation of Liability</h3>
-        <p>We are not liable for any direct, indirect, incidental, or consequential damages arising out of your use or inability to use the site or services provided.</p>
-
-        <h3>5. Third-Party Links</h3>
-        <p>We may link to external websites. We are not responsible for their content, services, or privacy practices.</p>
-
-        <h3>6. Changes to Terms</h3>
-        <p>Odiems Limited may update these Terms at any time. Changes become effective once posted. Your continued use of the site implies acceptance of those changes.</p>
-
-        <h3>7. Governing Law</h3>
-        <p>These Terms are governed by the laws of the Republic of Kenya. Any disputes shall be resolved in Kenyan courts.</p>
-
-        <h3>8. Contact</h3>
-        <p>If you have any questions about these Terms, please contact us at <a href="mailto:info@odiemslimited.com">info@odiemslimited.com</a>.</p>
-
-        <p><strong>Last Updated:</strong> July 21, 2025</p>
-        <!-- Google AdSense -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-xxxxxxxxxxxxxxxx"
-     data-ad-slot="1234567890"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
-      </article>
+    <section class="subscribe">
+      <div class="container">
+        <h2>Subscribe to Our Newsletter</h2>
+        <form action="https://YOUR_MAILCHIMP_URL" method="post" target="_blank">
+          <input type="email" name="EMAIL" placeholder="Enter your email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
     </section>
   </main>
 
   <footer>
     <div class="container">
       <p>&copy; 2025 Odiems Limited. All rights reserved.</p>
-      <nav class="footer-nav">
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="terms.html" class="active">Terms & Conditions</a>
-        <a href="sitemap.xml">Sitemap</a>
-      </nav>
+      <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms & Conditions</a></p>
     </div>
   </footer>
-  <section class="newsletter">
-  <div class="container">
-    <h2>Subscribe to Our Newsletter</h2>
-    <form action="https://YOUR-USERNAME.usX.list-manage.com/subscribe/post?u=YOUR_U_ID&amp;id=YOUR_LIST_ID" method="post" target="_blank" novalidate>
-      <input type="email" name="EMAIL" placeholder="Enter your email" required>
-      <button type="submit">Subscribe</button>
-    </form>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LF549YFVQ8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-LF549YFVQ8');
+  </script>
+
+  <!-- AdSense Placeholder -->
+  <div style="display: none">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+         data-ad-slot="1234567890"
+         data-ad-format="auto"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
   </div>
-</section>
-<!-- Tawk.to Live Chat -->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/YOUR_PROPERTY_ID/default';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
 
 </body>
+
 </html>
