@@ -196,3 +196,20 @@ form button:hover {
     text-align: center;
   }
 }
+
+.blog-feed {
+  padding: 2rem;
+  background: #f8f9fa;
+}
+#blog-posts {
+  display: grid;
+  gap: 1.5rem;
+}
+#blog-posts > div {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
