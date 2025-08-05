@@ -1,4 +1,0 @@
-Host: www
-Type: CNAME
-Value: odiemslimited.github.io
-TTL: 3600
